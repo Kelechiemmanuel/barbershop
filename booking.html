@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="book-section">
+<div class="book-container">
+<div class="left-side">
+<ul class="lists">
+    <li class="list-items" onclick="booking()">
+        <a href="#">Book Application</a>
+    </li>
+    <li class="list-items" onclick="staffs()">
+        <a href="#">Staff</a>
+    </li>
+    <li class="list-items" onclick="services()">
+        <a href="#">Services</a>
+    </li>
+    <!-- <li class="list-items" onclick="aboutUs()">About Us</li> -->
+</ul>
+</div>
+
+<div class="middle-side">
+<div class="middle-side-booking">
+    <div class="headline">
+        <h4>Your Service</h4>
+        <a href="#">Policy</a>
+    </div>
+    <!-- <div class="counting-line"></div> -->
+
+<div class="staff-around" onclick="closeStaff()">
+<h5 class="back-arrow" onclick="backBtn()">
+    <span class="material-icons symbol">keyboard_arrow_left</span> Choose Provide</h5>
+    
+<div class="staff-con">
+                <!-- professional in charge -->
+<div class="date-time">
+    <h5 class="back-arrowz" onclick="backBtnz()">
+        <span class="material-icons symbol">keyboard_arrow_left</span> Date & Time
+    </h5>
+    <h5>Appointments are only available from:</h5>
+    <ul>
+        <li>
+            Monday - Friday
+        </li>
+        <li>
+            9am - 4pm 
+        </li>
+    </ul>
+
+    <!-- booking form -->
+
+    <div class="form-con">
+        <form class="form" action="https://formsubmit.co/83d4cec1e914f3dd094b44a331bbc1be " method="POST">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://kelechiemmanuel.github.io/contat-submit/success.html">
+            <div class="input-group">
+                <input type="text" name="name" class="input" placeholder="Enter Name">
+            </div>
+            
+            <div class="input-group">
+                <input type="email" name="email" class="input" placeholder="Enter Email" required>
+            </div>
+    
+            <div class="input-group">
+                <input type="text" name="phone" class="input" placeholder="Mobile Number" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" name="location" class="input" placeholder="Location" required>
+            </div>
+            
+            <input type="datetime-local" name="date" class="date-checking" required>
+    
+            <button class="submit-booker" type="submit">Send</button>
+        </form> 
+        </div> 
+</div>
+
+
+
+    <div class="staff-all1" onclick="staffOpen()">
+        <img src="images/staff.jpg" alt="" class="staff-1">  
+        <h4 class="staff-name">David</h4>
+        <p class="right-arrows"><span class="material-icons symbols">keyboard_arrow_right</span> </p>
+    </div>
+
+    <div class="staff-all2">
+        <img src="images/staff.jpg" alt="" class="staff-1">  
+        <h4 class="staff-name">David</h4>
+        <p class="right-arrows"><span class="material-icons symbols">keyboard_arrow_right</span></p>
+    </div>
+
+    <div class="staff-all3">
+        <img src="images/staff.jpg" alt="" class="staff-1">  
+        <h4 class="staff-name">David</h4>
+        <p class="right-arrows"><span class="material-icons symbols">keyboard_arrow_right</span></p>
+    </div>
+
+    <div class="staff-all4">
+        <img src="images/staff.jpg" alt="" class="staff-1">  
+        <h4 class="staff-name">David</h4>
+        <p class="right-arrows"><span class="material-icons symbols">keyboard_arrow_right</span></p>
+    </div>
+</div>
+</div>
+
+
+
+    <div class="book-con">
+    <div class="customers" onclick="openStaff()">
+        <img src="images/comb2.png" alt="" class="style-img">
+        <a class="trim-link" href="#">Haircuts(Shampoo and Style inclusive)<br>
+            <span>60mins  &#160; &#x2022;&#160;₦10000</span>
+        </a>
+    </div>  
+    <div class="customers">
+        <img src="images/chair.png" alt="" class="style-img">
+        <a class="trim-link" href="#">Beard Trim (w/ Straight Razor Finish, A Cold Towel)<br>
+            <span>60mins  &#160; &#x2022;&#160;₦10000</span>
+        </a>
+    </div>  
+    <div class="customers">
+        <img src="images/brush.png" alt="" class="style-img">
+        <a class="trim-link" href="#">Haircut and Beard Trim<br>
+            <span>120mins  &#160; &#x2022;&#160;₦15000</span>
+        </a>
+    </div>  
+
+    <div class="customers">
+        <img src="images/coloring.png" alt="" class="style-img">
+        <a class="trim-link" href="#">Cut And Color<br>
+            <span>120mins  &#160; &#x2022;&#160;₦15000</span>
+        </a>
+    </div> 
+
+    <div class="customers">
+        <img src="images/general.png" alt="" class="style-img">
+        <a class="trim-link" href="#">General Service<br>
+            <span>180mins  &#160; &#x2022;&#160;₦25000</span>
+        </a>
+    </div>    
+</div>
+    
+</div>
+<div class="middle-side-staff">
+    <div class="headline">
+        <h4>Our Staff</h4>
+        <a href="#">Policy</a>
+    </div>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+    <p>staff</p>
+</div>
+<div class="middle-side-service">
+    <div class="headline">
+        <h4>Services</h4>
+        <a href="#">Policy</a>
+    </div>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+    <p>services</p>
+</div>
+</div>
+
+<div class="right-side">
+<h5 class="title-info">Contact info</h5>
+</div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/book.js"></script>
+    <!-- <script src="js/email.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

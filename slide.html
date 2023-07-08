@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+  <div class="login_box">
+    <h2>BOOK YOUR ROOM NOW</h2>
+
+    <form>
+      <div class="user_box">
+        <input id="user_name" type="text" name="username" required />
+        <label>Enter Your Name</label>
+      </div>
+      <br />
+      <div class="user_box">
+        <input id="user_email" type="email text" name="username" required />
+        <label>Enter E-mail Address</label>
+      </div>
+
+      <br />
+
+      <div class="user_box">
+        <input
+          id="no._rooms"
+          type="number"
+          min="1"
+          name="no._of_rooms"
+          required
+          id="password"
+        />
+        <label>No. of Rooms</label>
+      </div>
+      <br />
+      <div class="user_box">
+        <input
+          id="no._people"
+          type="number"
+          min="1"
+          name="password"
+          required
+        />
+
+        <label>No. Of People</label>
+      </div>
+      <br />
+      <div class="message"></div>
+
+      <div class="button_form">
+        <button id="book_btn" onclick="sendmail() ; reset(); return false">
+          BOOK
+        </button>
+        </button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+   
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
