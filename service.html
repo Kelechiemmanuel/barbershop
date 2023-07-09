@@ -3,266 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/service.css">
     <title>Document</title>
-    <style>
-        .gallary-pic{
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
-            animation-duration: 3s;
-            animation-name: slidein;
-        }
-
-        @keyframes slidein {
-            from {
-                margin-left: 100%;
-                width: 300%;
-            }
-
-            to {
-                margin-left: 0%;
-                width: 100%;
-            }
-            }
-
-        .gallary{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 10px;
-        }
-
-        .hidden{
-            display: none;
-        }
-
-        .hide{
-            text-align: center;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .show-more{
-            border: none;
-            font-size: 20px;
-            background: none;
-            cursor: pointer;
-        }
-
-        .show-less{
-            border: none;
-            background: none;
-            cursor: pointer;
-            display: none;
-        }
-
-        .wordCarousel div {
-            overflow: hidden;
-            position: relative;
-            /* float: right; */
-            height: 65px;
-            padding-top: 10px;
-            margin-top: -10px;
-            }
-            .wordCarousel div li {
-            color: #ccc;
-            font-weight: 700;
-            padding: 0 10px;
-            height: 45px;
-            margin-bottom: 45px;
-            display: block;
-            }
-
-            .flip2 {
-            -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-                    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-            }
-
-            .flip3 {
-            -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-                    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-            }
-
-            .flip4 {
-            -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-                    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-            }
-
-            @-webkit-keyframes flip2 {
-            0% {
-                margin-top: -180px;
-            }
-            5% {
-                margin-top: -90px;
-            }
-            50% {
-                margin-top: -90px;
-            }
-            55% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-
-            @keyframes flip2 {
-            0% {
-                margin-top: -180px;
-            }
-            5% {
-                margin-top: -90px;
-            }
-            50% {
-                margin-top: -90px;
-            }
-            55% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-            @-webkit-keyframes flip3 {
-            0% {
-                margin-top: -270px;
-            }
-            5% {
-                margin-top: -180px;
-            }
-            33% {
-                margin-top: -180px;
-            }
-            38% {
-                margin-top: -90px;
-            }
-            66% {
-                margin-top: -90px;
-            }
-            71% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-            @keyframes flip3 {
-            0% {
-                margin-top: -270px;
-            }
-            5% {
-                margin-top: -180px;
-            }
-            33% {
-                margin-top: -180px;
-            }
-            38% {
-                margin-top: -90px;
-            }
-            66% {
-                margin-top: -90px;
-            }
-            71% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-            @-webkit-keyframes flip4 {
-            0% {
-                margin-top: -360px;
-            }
-            5% {
-                margin-top: -270px;
-            }
-            25% {
-                margin-top: -270px;
-            }
-            30% {
-                margin-top: -180px;
-            }
-            50% {
-                margin-top: -180px;
-            }
-            55% {
-                margin-top: -90px;
-            }
-            75% {
-                margin-top: -90px;
-            }
-            80% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-            @keyframes flip4 {
-            0% {
-                margin-top: -360px;
-            }
-            5% {
-                margin-top: -270px;
-            }
-            25% {
-                margin-top: -270px;
-            }
-            30% {
-                margin-top: -180px;
-            }
-            50% {
-                margin-top: -180px;
-            }
-            55% {
-                margin-top: -90px;
-            }
-            75% {
-                margin-top: -90px;
-            }
-            80% {
-                margin-top: 0px;
-            }
-            99.99% {
-                margin-top: 0px;
-            }
-            100% {
-                margin-top: -270px;
-            }
-            }
-
-
-    </style>
 </head>
 <body>
+    <div id="myNav" class="box-con">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="box">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="./booking.html">Book</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">About Us</a>
+        </ul>
+    </div>
 
-    <h4 class="wordCarousel">    
-        <span>Word swipe animation: </span>  
-        <div> 
-<!--        Use classes 2,3, or 4 to match the number of words --> 
-            <ul class="flip4"> 
-                <li>Oh My!</li>
-                <li>Swoosh</li>
-                <li>Cool</li> 
-                <li>Awesome</li>  
-            </ul>
-        </div>  
-    </h4>
+    <div class="nav-bar">
+        <div class="logo-con">
+          <h1 class="logo"> ST JAMES  <span class="break"><br>BARBERSHOP</span></h1>   
+        </div>
+        <ul class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="./booking.html">Book</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">About Us</a>
+        </ul>
+      <p class="open-up" onclick="openNav()">&#9776;</p>
+    </div>
+
+
+
+<div class="slide-con">
+<div id="slide" class="slider-btn">
+<a href="javascript:void(0)" class="closebtn2" onclick="slideShow()">&times;</a>
+<div class="slide-child">
+  <a href="#">We're here for you.</a>
+  <a class="super" href="#">
+      <span class="material-icons clicks">phone</span>
+      <span class="click">08148611216</span>
+  </a>
+  <button class="open-button" onclick="openForm()">
+      <a class="inside-link" href="#">
+      
+  <i class='fas fa-comment-dots clicks'></i>
+      <span class="click">Click to chat</span>
+      </a>
+  </button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container">
+      <div class="chat">
+          <button type="button" class="btn cancel" onclick="closeForm()">&times;</button> 
+  
+          <div class="chat_body"> 
+      
+            
+            
+            </div>   
+            <div class="chat_input">
+                <input type="text" class="in" placeholder="Start a Conversation...">
+                <button class="send">
+                  <span class="material-icons arrows">send</span>
+                </button>
+            </div>  
+            </div> 
+    </form>
+  </div>
+</div>
+</div>
+<div class="slide-button">
+<h3 class="open-up2" onclick="openHelp()">
+  <img class="help-img" src="images/help2.png" alt="">
+</h3>
+</div>
+</div>
     <section class="section-gallary">
         <div class="gallary-con">
             <div class="gallary">
@@ -341,6 +161,81 @@
         </div>
         </div>
     </section>
+
+
+    <section class="footer-con">
+        <footer class="footer-items">
+        <div class="footer">
+        <h1 class="logo">Watch <span class="break">Zone</span></h2> 
+        <div class="iconization">
+        <span class="material-icons iconize">location_on</span>
+        <span class="shop-no">Shop No.5, 2nd floor Yemi plaza, off Freedom way, Lekki.</span>
+        </div>
+        <div class="iconization">
+          <span class="material-icons iconize">mail</span>
+          <span class="shop-no">sales@watchzone.com.ng</span>
+        </div>
+        <div class="iconization">
+          <span class="material-icons iconize">phone</span>
+          <span class="shop-no">(+234)7030310373</span>
+        </div>
+        
+        <div class="social-info">
+          <h3 class="social-title">SOCIAL INFO</h3>
+          <div class="social-media">
+              <a href="https://www.facebook.com">
+              <i class='fab fa-facebook-f social'></i>
+              </a>
+              <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter social"></i>
+              </a>
+              <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram social"></i>
+              </a>
+          </div>
+        </div>
+        </div>
+        
+        <div class="footer">
+        <h3 class="footer-title">Other Information</h3>
+        <ul class="footer-bar">
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Home</a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">About US </a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Services</a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Features</a>
+        </li>
+        </ul>
+        </div>
+        
+        <div class="footer">
+        <h3 class="footer-title">Newsletter</h3>
+        <p class="news-letter">
+          Be the first to know about our exclusive products and offers. 
+          Enter your e-mail and subscribe to our newsletter. Thank you
+        </p>
+        <form class="news-sender" action="#">
+        <input class="placeholder" type="text" placeholder="Enter Your E-mail">
+        <button class="sender">
+          <span class="material-icons arrows">send</span>
+        </button>
+        </form>
+        </div>
+        </footer>
+        </section>
+        <button class="up-arrow-btn">
+        <a href="#">  <span class="material-icons up-arrow">expand_less</span></a>
+        </button>
 
 
 
