@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallary-pic{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+            }
+
+        .gallary{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .hide{
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .show-more{
+            border: none;
+            font-size: 20px;
+            background: none;
+            cursor: pointer;
+        }
+
+        .show-less{
+            border: none;
+            background: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        .wordCarousel div {
+            overflow: hidden;
+            position: relative;
+            /* float: right; */
+            height: 65px;
+            padding-top: 10px;
+            margin-top: -10px;
+            }
+            .wordCarousel div li {
+            font-family: Serif;
+            color: #ccc;
+            font-weight: 700;
+            padding: 0 10px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+            }
+
+            .flip2 {
+            -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+                    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            }
+
+            .flip3 {
+            -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+                    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            }
+
+            .flip4 {
+            -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+                    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            }
+
+            @-webkit-keyframes flip2 {
+            0% {
+                margin-top: -180px;
+            }
+            5% {
+                margin-top: -90px;
+            }
+            50% {
+                margin-top: -90px;
+            }
+            55% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+
+            @keyframes flip2 {
+            0% {
+                margin-top: -180px;
+            }
+            5% {
+                margin-top: -90px;
+            }
+            50% {
+                margin-top: -90px;
+            }
+            55% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+            @-webkit-keyframes flip3 {
+            0% {
+                margin-top: -270px;
+            }
+            5% {
+                margin-top: -180px;
+            }
+            33% {
+                margin-top: -180px;
+            }
+            38% {
+                margin-top: -90px;
+            }
+            66% {
+                margin-top: -90px;
+            }
+            71% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+            @keyframes flip3 {
+            0% {
+                margin-top: -270px;
+            }
+            5% {
+                margin-top: -180px;
+            }
+            33% {
+                margin-top: -180px;
+            }
+            38% {
+                margin-top: -90px;
+            }
+            66% {
+                margin-top: -90px;
+            }
+            71% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+            @-webkit-keyframes flip4 {
+            0% {
+                margin-top: -360px;
+            }
+            5% {
+                margin-top: -270px;
+            }
+            25% {
+                margin-top: -270px;
+            }
+            30% {
+                margin-top: -180px;
+            }
+            50% {
+                margin-top: -180px;
+            }
+            55% {
+                margin-top: -90px;
+            }
+            75% {
+                margin-top: -90px;
+            }
+            80% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+            @keyframes flip4 {
+            0% {
+                margin-top: -360px;
+            }
+            5% {
+                margin-top: -270px;
+            }
+            25% {
+                margin-top: -270px;
+            }
+            30% {
+                margin-top: -180px;
+            }
+            50% {
+                margin-top: -180px;
+            }
+            55% {
+                margin-top: -90px;
+            }
+            75% {
+                margin-top: -90px;
+            }
+            80% {
+                margin-top: 0px;
+            }
+            99.99% {
+                margin-top: 0px;
+            }
+            100% {
+                margin-top: -270px;
+            }
+            }
+
+
+    </style>
+</head>
+<body>
+
+    <h4 class="wordCarousel">    
+        <span>Word swipe animation: </span>  
+        <div> 
+<!--        Use classes 2,3, or 4 to match the number of words --> 
+            <ul class="flip4"> 
+                <li>Oh My!</li>
+                <li>Swoosh</li>
+                <li>Cool</li> 
+                <li>Awesome</li>  
+            </ul>
+        </div>  
+    </h4>
+    <section class="section-gallary">
+        <div class="gallary-con">
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary.jpg" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/james2.jpeg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary18.webp" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary8.jpg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+
+              <div class="hide">
+                <button class="show-more" onclick="hideBtn()"> &plus; Show More</button>   
+              </div>
+              <div class="hide">
+                <button class="show-less" onclick="lessBtn()">Show Less</button>  
+              </div>
+
+        <div class="hidden" id="hide">
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary9.jpg" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary13.jpg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary21.jpg" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary22.jpg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary16.jpg" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary17.jpg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+
+            <div class="gallary">
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary11.jpg" alt="">
+                </div>
+                <div class="pictures">
+                    <img class="gallary-pic" src="images/gallary14.jpg" alt="">
+                </div>
+                <div class="pictures">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/service.js"></script>
+</body>
+</html>
