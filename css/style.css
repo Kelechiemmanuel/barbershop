@@ -1160,7 +1160,7 @@ justify-content: center;
   .open-up{
     display: block;
   }
-  
+
   .open-up{
     margin-right: 60px;
   }
@@ -1179,6 +1179,10 @@ justify-content: center;
   } 
   .footer{
     margin-bottom: 50px;
+  }
+
+  .add-cart{
+    margin-top: 200px;
   }
 
   .up-arrow-btn{
