@@ -1,6 +1,6 @@
 // navigator slide
 function openNav(){
-    document.querySelector('#myNav').style.width = '40%'
+    document.querySelector('#myNav').style.width = '100%'
 }
 function closeNav() {
     document.querySelector('#myNav').style.width = '0';
@@ -12,12 +12,13 @@ function slideShow() {
     document.getElementById('slide').style.width = '0';
 }
 function openHelp() {
-    document.getElementById('slide').style.width = '20%';
+    document.getElementById('slide').style.width = '30%';
 }
 
 // livechat popps
 function openForm() {
     document.getElementById("myForm").style.display = "block";
+    document.getElementById('slide').style.width = '0';
   }
   
   function closeForm() {
