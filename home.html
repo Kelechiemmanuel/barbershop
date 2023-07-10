@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myNav" class="box-con">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="box">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="./booking.html">Book</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">About Us</a>
+        </ul>
+    </div>
+
+    <div class="nav-bar">
+      <div class="logo-con">
+        <h1 class="logo"> ST JAMES  <span class="break"><br>BARBERSHOP</span></h1>   
+    </div>
+        <ul class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="./booking.html">Book</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#">About Us</a>
+        </ul>
+      <p class="open-up" onclick="openNav()">&#9776;</p>
+    </div>
+
+<section class="swipe-container">
+  <div id="slide" class="swide-container">
+    <div class="slideer">
+      <a href="javascript:void(0)" class="closebtn2" onclick="slideShow()">&times;</a>
+      <div class="swipe-inner">
+        <h3>We are here for you</h3>
+        <a class="super" href="#">
+          <span class="material-icons clicks">phone</span>
+          <span class="click">08148611216</span>
+      </a>
+      <button class="open-button" onclick="openForm()">
+          <a class="inside-link" href="#">
+          
+      <i class='fas fa-comment-dots clicks'></i>
+          <span class="click">Livechat</span>
+          </a>
+      </button>
+    
+      <div class="chat-popup" id="myForm">
+        <form action="#" class="form-container">
+          <div class="chat">
+              <button type="button" class="btn cancel" onclick="closeForm()">&times;</button> 
+      
+              <div class="chat_body"> 
+          
+                
+                
+                </div>   
+                <div class="chat_input">
+                    <input type="text" class="in" placeholder="Start a Conversation...">
+                    <button class="send">
+                      <span class="material-icons arrows">send</span>
+                    </button>
+                </div>  
+                </div> 
+        </form>
+      </div>
+      </div>
+    </div>
+  
+    <div class="slide-button">
+      <h3 class="open-up2" onclick="openHelp()">
+        <img class="help-img" src="images/help2.png" alt="">
+      </h3>
+    </div>
+  </div>
+</section>
+
+<section class="home-con">
+<div class="home">
+  <div class="watch-con">
+      <div class="title-con">
+          <h4 class="wordCarousel">    
+            <span class="watch-title">ST JAMES BARBERSHOP: </span>  
+            <div> 
+                <ul class="flip4"> 
+                    <li class="brands">Classic Cutz!</li>
+                    <li class="break">Hot Towel Shaves</li>
+                    <li class="description2">Cool</li> 
+                    <li class="break">Awesome</li>  
+                </ul>
+            </div>  
+        </h4>
+          <div class="shop">
+          <button class="shop-now">Book Now</button>
+      </div>
+      </div>
+    
+    
+  </div>
+  <div class="auto" id="slideshow-example" data-component="slideshow">
+      <div role="list">
+        <div class="slide">
+          <img class="image21" src="images/style7.avif" alt="">
+        </div>
+        <div class="slide">
+          <img class="image21" src="images/styles4.avif" alt="">
+        </div>
+        <div class="slide">
+          <img class="image21" src="images/style5.avif" alt="">
+        </div>
+        <div class="slide">
+          <img class="image21" src="images/style6.avif" alt="">
+        </div>
+      </div>
+
+      </div>
+    </div>
+  
+</div>
+</section>
+
+<section class="add-cart">
+<div class="box-container">
+<div class="boxing">
+<div class="collection-img1">
+<div class="collection-con">
+  <div class="selection">
+      <div>
+        <h1 class="mens-collect">HAIR SERVICE</h1> 
+    </div>
+    
+    <div>
+        <button class="shop-now">Book Now</button>
+    </div>  
+    </div>
+</div> 
+</div>
+
+</div> 
+<div class="boxing">
+<div class="collection-img2">
+<div class="collection-con">
+  <div class="selection">
+      <div>
+        <h1 class="mens-collect">BEARD & SHAVES</h1> 
+    </div>
+    
+    <div>
+        <button class="shop-now">Book Now</button>
+    </div>  
+    </div>
+</div> 
+
+</div>
+</div> 
+<div class="boxing">
+<div class="collection-img3">
+<div class="collection-con">
+  <div class="selection">
+      <div>
+      <h1 class="mens-collect">HAIR CONDITIONING</h1> 
+  </div>
+    
+    <div>
+      <button class="shop-now">Book Now</button>
+  </div>  
+  </div>
+  
+</div> 
+
+</div>
+</div> 
+</div>
+</section>
+
+<section class="introduction">
+<div class="introduction-flex">
+<div class="intro-profile">
+
+<div class="profile">
+  <div class="profile-sec">
+      <img class="img-src" src="images/master.png" alt=""> 
+
+      <div class="profile-all">
+          <div>
+              <h1>John Smith</h1>  
+              <div class="liners"></div>
+            </div>
+            <p class="age-bracket">
+              24 years old barber
+            </p>
+          <p class="age-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam
+          </p>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="intro-profile">
+<div class="story">
+  <div class="story-line">
+      <img src="images/comb.png" alt="">
+      <h2>We cut like a pros</h2>
+      <div class="lines">
+      <img src="images/razor.png" alt="">
+      </div>
+  </div>
+<p class="hero">
+  ST JAMES BARBERSHOP is one of the best barbershop, and we offer the best men's
+    haircuts around. Our professional barbers will give you a cut that will make you look and feel your best. 
+  We also offer other services such as shaves, beard trims, and more. Come see us today and leave looking sharp!
+</p>
+<div class="link-up">
+  <button class="shop-now">
+      <a class="linkin-line" href="#">About Us</a>
+  </button>
+</div> 
+</div>
+
+</div>
+
+<div class="intro-profile">
+<div class="when-visit">
+    <button class="shop-nows">Book Your Visit</button> 
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="script">
+<h2>Shout-outs</h2>
+<p>What our customer have to say about us.</p> 
+</div>
+
+<div id="myCarousel" class="carousel slide">
+<ol class="carousel-indicators">
+<li class="item1 active"></li>
+<li class="item2"></li>
+<li class="item3"></li>
+<li class="item4"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img class="carousel-image" src="images/shave2.webp">
+<p class="carousel-menu">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam
+</p>
+</div>
+
+<div class="item">
+<img class="carousel-image" src="images/master.png">
+<p class="carousel-menu">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam
+</p>
+</div>
+
+<div class="item">
+<img class="carousel-image" src="images/shave1.jpg">
+<p class="carousel-menu">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam
+</p>
+
+</div>
+
+<div class="item">
+<img class="carousel-image" src="images/shave3.jpg">
+<p class="carousel-menu">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam
+</p>
+</div>
+</div>
+
+<a class="left carousel-control" href="#myCarousel" role="button">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+</section>
+
+<section class="container-forms">
+  <div class="form-login">
+      <p id="user">Continue as: </p> 
+      <button id="signout"> Sign Out</button>
+  </div>
+</section>
+
+
+<section class="footer-con">
+<footer class="footer-items">
+<div class="footer">
+<!-- <h1 class="logo">Watch <span class="break">Zone</span></h2>  -->
+  <h3 class="logo"> ST JAMES  <span class="break"><br>BARBERSHOP</span></h3>
+    <!-- <h1 class="logo"> ST JAMES  <span class="break"><br>BARBERSHOP</span></h1>    -->
+<div class="iconization">
+<span class="material-icons iconize">location_on</span>
+<span class="shop-no">Shop No.5, 2nd floor Yemi plaza, off Freedom way, Lekki.</span>
+</div>
+<div class="iconization">
+  <span class="material-icons iconize">mail</span>
+  <span class="shop-no">sales@watchzone.com.ng</span>
+</div>
+<div class="iconization">
+  <span class="material-icons iconize">phone</span>
+  <span class="shop-no">(+234)7030310373</span>
+</div>
+
+<div class="social-info">
+  <h3 class="social-title">SOCIAL INFO</h3>
+  <div class="social-media">
+      <a href="https://www.facebook.com">
+      <i class='fab fa-facebook-f social'></i>
+      </a>
+      <a href="https://www.twitter.com">
+      <i class="fa-brands fa-twitter social"></i>
+      </a>
+      <a href="https://www.instagram.com">
+      <i class="fa-brands fa-instagram social"></i>
+      </a>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+<h3 class="footer-title">Other Information</h3>
+<ul class="footer-bar">
+<li class="bars">
+<span class="material-icons arrow">keyboard_arrow_right</span>
+<a class="footer-link" href="#">Home</a>
+</li>
+<li class="bars">
+<span class="material-icons arrow">keyboard_arrow_right</span>
+<a class="footer-link" href="#">About US </a>
+</li>
+<li class="bars">
+<span class="material-icons arrow">keyboard_arrow_right</span>
+<a class="footer-link" href="#">Services</a>
+</li>
+<li class="bars">
+<span class="material-icons arrow">keyboard_arrow_right</span>
+<a class="footer-link" href="#">Features</a>
+</li>
+</ul>
+</div>
+
+<div class="footer">
+<h3 class="footer-title">Newsletter</h3>
+<p class="news-letter">
+  Be the first to know about our exclusive products and offers. 
+  Enter your e-mail and subscribe to our newsletter. Thank you
+</p>
+<form class="news-sender" action="#">
+<input class="placeholder" type="text" placeholder="Enter Your E-mail">
+<button class="sender">
+  <span class="material-icons arrows">send</span>
+</button>
+</form>
+</div>
+</footer>
+</section>
+<button class="up-arrow-btn">
+<a href="#">  <span class="material-icons up-arrow">expand_less</span></a>
+</button>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+<script src="js/signout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

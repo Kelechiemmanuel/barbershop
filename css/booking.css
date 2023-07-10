@@ -89,20 +89,21 @@ body{
 }
 .logo{
   color: gray;
-  /* font-family: Dancing Script; */
-  line-height: 1;
+  line-height: 0.5;
+  letter-spacing: 2px;
   cursor: pointer;
   margin-bottom: 10px;
   margin-top: 10px;
 }
 .logo-con{
-  margin-left: 60px;
+  margin-left: -40px;
 }
 .break{
   color: rgba(199, 176, 130, 1);
   font-family: Dancing Script;
-  margin-top: -10px;
-  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 /* .slide-button{
@@ -481,22 +482,15 @@ font-size:1.1rem;
 .title-con{
   text-align: center;
   height: 100%;
-  padding-top: 50px;
-  background-color: rgba(0, 0, 0, 0.603);
-}
-.title-con2{
-  text-align: center;
-  height: 100%;
-  margin-left: 7px;
-  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.603);
 }
 
 .slide{
-  /* background-image: linear-gradient(to left, black,rgb(48, 43, 43),rgb(107, 107, 100),rgb(58, 56, 56),
-  black,black,black); */
   text-align: center;
-  margin-top: 50px;
   color: white;
   transition: 0.8s;
   overflow: hidden;
@@ -507,32 +501,23 @@ justify-content: center;
 }
 
 .slide img{
-  max-width: 300px;
-  width: 300px;
-  height: 250px;
-  object-fit: cover;
-  text-align: center;
-}
+    max-width: 500px;
+    margin-top: 8px;
+    width: 500px;
+    height: 405px;
+    object-fit: cover;
+    text-align: center;
+  }
+
 
 .watch-con{
   background-image: url(../images/shopppp.jpeg);
   background-size: calc(100% - 5%);
   background-repeat: no-repeat;
   background-position: center;
-  width: 300px;
+  width: 600px;
   margin-right: -15px;
-  height: 250px;
-  margin-top: 43px;
-}
-.watch-con2{
-  background-image: url(../images/shoppppppppp.jpeg);
-  background-size: calc(100% - 5%);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 300px;
-  margin-left: -7px;
-  height: 250px;
-  margin-top: 43px;
+  height: 600px;
 }
 
 [data-component="slideshow"] .slide {
@@ -558,6 +543,7 @@ justify-content: center;
 
 .book-container{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -632,12 +618,12 @@ justify-content: center;
 }
 
 .form{
-    padding: 40px 20px;
+    padding: 40px 5px;
     width: 100%;
-    max-width: 500px;
+    max-width: 900px;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px #666;
+    /* box-shadow: 0px 0px 10px 0px #666; */
 }
 
 .input-group{
@@ -884,34 +870,17 @@ justify-content: center;
     font-weight: bolder;
   }
 
+  @media screen and (min-width: 1100px){
+    .open-up{
+      display: none;
+    }
+    .box-con{
+      display: none;
+    }
+    
+  }
+
   @media screen and (max-width: 1100px) {
-    .introduction-flex{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .book-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .middle-side{
-      max-width: 200px;
-      width: 100%;
-    }
-  
-    .profile-sec{
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .slide img{
-      max-width: 400px;
-      width: 100%;
-    }
     .when-visit{
       height: 100vh;
     }
@@ -931,10 +900,10 @@ justify-content: center;
       display: block;
     }
   
-    .watch-con{
+    /* .watch-con{
       max-width: 400px;
       width: 100%;
-    }
+    } */
   
     .add-cart{
       margin-top: 1px;
@@ -963,9 +932,49 @@ justify-content: center;
       margin-bottom: 50px;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .book-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .watch-con{
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .introduction-flex{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .profile-sec{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .slide img{
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .middle-side{
+      max-width: 400px;
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 320px) {
     .add-cart{
       display: grid;
+    }
+
+    .middle-side{
+      max-width: 200px;
+      width: 100%;
     }
   
     .up-arrow-btn{
