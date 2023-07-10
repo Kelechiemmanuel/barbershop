@@ -1185,4 +1185,8 @@ justify-content: center;
     margin: 10px;
     display: grid;
   }
+
+  .up-arrow-btn{
+    display: none;
+  }
 }
