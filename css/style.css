@@ -8,15 +8,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.break{
-    color: rgb(187, 7, 37);
+.logo{
     font-family: Dancing Script;
-    font-size: 50px;
+    font-size: 20px;
   }
 
-  .logo{
-    font-family: Dancing Script;
+  .breaker{
     text-align: center;
+    line-height: 0.8;
+    margin-bottom: 10px;
+    font-size: 30px;
     color: gray;
   }
 
@@ -89,7 +90,7 @@ form{
 }
 
 .field input:focus{
-    border-color: rgb(187, 7, 37); 
+    border-color: rgba(49, 49, 49, 0.945); 
 }
 
 .eye-icon{
@@ -105,13 +106,13 @@ form{
 
 .field button{
     color:#fff;
-    background-color: rgb(187, 7, 37);
+    background-color: rgba(49, 49, 49, 0.945);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .field button:hover{
-    background-color: rgb(187, 7, 37);
+    background-color: rgba(49, 49, 49, 0.945);
 }
 
 .form-link{
@@ -128,7 +129,8 @@ form{
 
 .form a {
     text-decoration: none;
-    color: rgb(187, 7, 37);
+    /* color: rgba(49, 49, 49, 0.945); */
+    color: rgba(199, 176, 130, 1);
 }
 
 .form-content a:hover{
@@ -149,7 +151,7 @@ form{
     top: 50%;
     left: 50%;
     border-radius: 20px;
-    background-color: rgb(187, 7, 37);
+    background-color: rgba(49, 49, 49, 0.945);
     color: #8b8b8b;
     padding: 0px 15px;
     transform: translate(-50%, -50%);

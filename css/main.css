@@ -938,7 +938,7 @@ justify-content: center;
   margin-top: -10px;
   background: none;
   cursor: pointer;
-  color: rgb(187, 7, 37);
+  color: rgba(49, 49, 49, 0.945);
   text-decoration: underline;
 
 }
