@@ -1162,9 +1162,13 @@ justify-content: center;
   }
 
   .watch-con{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     max-width: 400px;
     width: 100%;
+  }
+
+  .add-cart{
+    margin-top: 1px;
   }
 
   .open-up{
