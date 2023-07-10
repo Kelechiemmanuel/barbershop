@@ -1179,6 +1179,10 @@ justify-content: center;
   .footer{
     margin-bottom: 50px;
   }
+
+  .up-arrow-btn{
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   .add-cart{
