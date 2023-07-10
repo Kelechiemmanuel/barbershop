@@ -35,7 +35,7 @@
     justify-content: center;
     border-radius: 20px;
     column-gap: 30px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .shade{
     background-color: rgba(0, 0, 0, 0.815);
