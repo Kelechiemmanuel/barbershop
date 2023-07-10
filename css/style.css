@@ -1137,6 +1137,11 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
+
+  .slide img{
+    max-width: 400px;
+    width: 100%;
+  }
   .when-visit{
     height: 100vh;
   }
@@ -1158,6 +1163,8 @@ justify-content: center;
 
   .watch-con{
     margin-top: 100px;
+    max-width: 400px;
+    width: 100%;
   }
 
   .open-up{
@@ -1186,7 +1193,7 @@ justify-content: center;
 }
 @media screen and (max-width: 320px) {
   .add-cart{
-    margin: 10px;
+    /* margin: 10px; */
     display: grid;
   }
 
