@@ -1160,25 +1160,7 @@ justify-content: center;
   .open-up{
     display: block;
   }
-
-  .watch-con{
-    margin-top: 100px;
-    max-width: 400px;
-    width: 100%;
-  }
-
-  .collection-img1{
-    width: 100%;
-    max-width: 400px;
-}
-.collection-img2{
-  width: 100%;
-  max-width: 400px;
-}
-.collection-img3{
-  width: 100%;
-  max-width: 400px;
-}
+  
   .open-up{
     margin-right: 60px;
   }
