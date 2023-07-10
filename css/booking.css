@@ -89,8 +89,11 @@ body{
 }
 .logo{
   color: gray;
-  font-family: Dancing Script;
+  /* font-family: Dancing Script; */
+  line-height: 1;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .logo-con{
   margin-left: 60px;
@@ -98,10 +101,11 @@ body{
 .break{
   color: rgba(199, 176, 130, 1);
   font-family: Dancing Script;
-  font-size: 50px;
+  margin-top: -10px;
+  font-size: 30px;
 }
 
-.slide-button{
+/* .slide-button{
   width: 80px;
   margin-top: -70px;
   height: 80px;
@@ -177,6 +181,54 @@ body{
   width: 20px;
   margin-right: 60px;
   height: 20px;
+} */
+
+.swide-container{
+  display: flex;
+  position: fixed;
+  left: 0;
+  width: 0;
+  transition: 0.5s;
+  z-index: 100;
+  top: 40%;
+}
+
+.slideer{
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+  text-align: center;
+  background-color: black;
+  margin-left: -2px;
+  border: 1px solid rgba(199, 176, 130, 1);
+}
+
+.help-img{
+  width: 80px;
+  border-radius: 50%;
+}
+.closebtn2{
+  position: absolute;
+  right: 100px;
+  top: 8px;
+  font-size: 25px;
+  color: gray;
+  text-decoration: none;
+}
+
+.closebtn2:hover{
+  color: gray;
+  text-decoration: none;
+}
+
+.slide-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(199, 176, 130, 1);
+  border-radius: 50px;
 }
 
 .chat-btn{
@@ -498,6 +550,7 @@ justify-content: center;
 .middle-side{
     padding: 60px 40px;
     width: 700px;
+    /* width: 100%; */
     height: 100%;
     box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.5);
     background-color: white;
@@ -829,5 +882,94 @@ justify-content: center;
     color: #fff;
     font-size: 40px;
     font-weight: bolder;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .introduction-flex{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .book-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .middle-side{
+      max-width: 200px;
+      width: 100%;
+    }
+  
+    .profile-sec{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .slide img{
+      max-width: 400px;
+      width: 100%;
+    }
+    .when-visit{
+      height: 100vh;
+    }
+    .add-carting{
+      background: none;
+    }
+    .boxingz{
+      width: 100%;
+    }
+  
+    .home{
+      background: none;
+      display: grid;
+  
+    }
+    .open-up{
+      display: block;
+    }
+  
+    .watch-con{
+      max-width: 400px;
+      width: 100%;
+    }
+  
+    .add-cart{
+      margin-top: 1px;
+    }
+    .auto{
+      margin-top: -70px;
+    }
+  
+    .open-up{
+      margin-right: 60px;
+    }
+    .small{
+      display: none;
+    }
+    .nav-items{
+      display: none;
+    }
+    
+    .footer-con{
+      width: 100%;
+    }
+    .footer-items{
+      flex-direction: column;
+    } 
+    .footer{
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .add-cart{
+      display: grid;
+    }
+  
+    .up-arrow-btn{
+      display: none;
+    }
   }
   

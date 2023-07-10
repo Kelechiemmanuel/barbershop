@@ -12,7 +12,7 @@ function slideShow() {
     document.getElementById('slide').style.width = '0';
 }
 function openHelp() {
-    document.getElementById('slide').style.width = '30%';
+    document.getElementById('slide').style.width = '70%';
 }
 
 // livechat popps
