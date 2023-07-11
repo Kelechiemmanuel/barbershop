@@ -77,7 +77,16 @@
       .menu-title{
         margin-left: 38px;
         display: flex;
-        /* text-align: center; */
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-items: center;
+        color: #fff;
+      }
+      .menu-title2{
+        margin-left: 38px;
+        flex-wrap: wrap;
+        text-decoration: none;
+        justify-content: center;
         align-items: center;
         color: #fff;
       }
@@ -211,6 +220,11 @@
         height: 200px;
         background-color: burlywood;
     }
+
+    /* .style{
+      width: 160px;
+      margin-right: 20px;
+    } */
     </style>
 </head>
 <body>
@@ -244,7 +258,7 @@
        <hr>
         <div class="menu" onclick="show('Page2');">
           <a href="#" class="menu-title">
-            Haircut and Beard Trim<br>
+            <span class="style">Haircut and Beard Trim</span><br>
         <span> &#160;120mins  &#160; &#x2022;&#160;₦15000</span>
           </a>
           <div class="title-next">
@@ -256,7 +270,7 @@
        <hr>
         <div class="menu" onclick="show('Page2');">
           <a href="#" class="menu-title">
-            Beard Trim (w/ Straight Razor Finish, A Cold Towel)<br>
+            <span class="style">Beard Trim (w/ Straight Razor Finish, A Cold Towel)</span><br>
           <span>60mins  &#160; &#x2022;&#160;₦10000</span>
           </a>
           <div class="title-next">
@@ -268,7 +282,7 @@
       <hr>
         <div class="menu" onclick="show('Page2');">
           <a href="#" class="menu-title">
-            General Service<br>
+            <span class="style"> General Service</span><br>
             <span>180mins  &#160; &#x2022;&#160;₦25000</span>
           </a>
           <div class="title-next">
@@ -280,7 +294,7 @@
       <hr>
         <div class="menu">
           <a href="#" class="menu-title" onclick="show('Page2');">
-            Haircuts(Shampoo and Style inclusive)<br>
+            <span class="style">Haircuts(Shampoo and Style inclusive)</span><br>
         <span>60mins  &#160; &#x2022;&#160;₦10000</span>
           </a>
           <div class="title-next">
@@ -312,7 +326,7 @@
        </div>
        <hr>
         <div class="menu" onclick="show('Page3');">
-          <a href="#" class="menu-title">
+          <a href="#" class="menu-title2">
             <img class="staff-images" src="images/general.png" alt="">
         <span>James (masterBarber)
         </span>
@@ -325,7 +339,7 @@
        </div>
        <hr>
         <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title">
+            <a href="#" class="menu-title2">
                 <img class="staff-images" src="images/general.png" alt="">
             <span>Chukwuka (masterBarber)
             </span>
@@ -338,7 +352,7 @@
       </div>
       <hr>
         <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title">
+            <a href="#" class="menu-title2">
                 <img class="staff-images" src="images/general.png" alt="">
             <span>Enda Ekene (masterBarber)
             </span>
@@ -351,7 +365,7 @@
       </div>
       <hr>
         <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title">
+            <a href="#" class="menu-title2">
             <img class="staff-images" src="images/general.png" alt="">
             <span>Enda Ekene (masterBarber)
             </span>
