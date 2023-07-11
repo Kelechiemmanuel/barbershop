@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+      }
+      .login-pop{
+        width: 100%;
+        height: 98vh;
+        background-color: black;
+      }
+      .login-con{
+        height: 200px;
+        width: 100%;
+        max-width: 600px;
+        background-color: rgb(75, 70, 70);
+      }
+
+      .persons-login{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+        height: 100px;
+        background-color: #fff;
+      }
+
+      .login-pri-btn{
+        padding: 5px 10px;
+      }
+
+      .hidden-flow{
+        overflow: hidden;
+      }
+      .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        /* overflow: hidden; */
+        max-width: 600px;
+        height: 50px;
+      }
+
+      .menu-cons{
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        padding: 60px 0 100px 0;
+        background-color: rgb(75, 70, 70);
+      }
+      .menu-con{
+        /* position: absolute; */
+        width: 100%;
+        left: 0;
+        max-width: 600px;
+        height: 325px;
+        background-color: rgb(75, 70, 70);
+      }
+
+      .Clients-login{
+        width: 400px;
+      }
+
+      .menu-title{
+        margin-left: 38px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .title-next{
+        margin-right: 40px;
+      }
+
+      .next-btn{
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 20px;
+      }
+
+      .next-btn:hover i{
+       transform: translateX(-5px);
+       transition: 0.8s;
+      }
+
+      hr{
+        width: 100%;
+        max-width: 600px;
+      }
+
+
+      .form-con{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .input{
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+        border-radius: 50px;
+        outline: none;
+        border: 1px solid lightgray;
+        margin-bottom: 20px;
+    }
+
+    .form{
+        padding: 40px 5px;
+        width: 100%;
+        max-width: 900px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        /* box-shadow: 0px 0px 10px 0px #666; */
+    }
+
+    .input-group{
+        position: relative;
+    }
+
+    .placeholder{
+        position: absolute;
+        top: 10px;
+        left: 8px;
+        font-size: 14px;
+        padding: 0px 5px;
+        color: #666;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+    .placeholder::after{
+    display: none;
+    }
+
+    .input:focus + .placeholder{
+        top: -10px;
+        color: #04AA6D;
+        background-color: #fff;
+        
+    }
+
+    .date-checking{
+        padding: 10px 70px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+    }
+
+    .submit-booker{
+        padding: 10px 20px;
+        margin-left: 40px;
+        color: #fff;
+        background-color: rgb(49, 49, 49);
+        border: none;
+        border-radius: 4px;
+    }
+    </style>
+</head>
+<body>
+<span onclick="show('Page1');">1</span>
+<span onclick="show('Page2');">2</span>
+<span onclick="show('Page3');">3</span>
+
+
+<!-- first page menu page -->
+<div id="Page1" class="page" style="display:block">
+    <div class="menu-cons" id="previous">
+        <div class="menu">
+          <h2 class="menu-title">Menu</h2>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+       </div>
+        <div class="menu">
+          <a href="#" class="menu-title">Haircuts</a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+       </div>
+       <hr>
+        <div class="menu">
+          <a href="#" class="menu-title">
+            Haircut and Beard Trim<br>
+        <span>120mins  &#160; &#x2022;&#160;₦15000</span>
+          </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+       </div>
+       <hr>
+        <div class="menu">
+          <a href="#" class="menu-title">
+            Beard Trim (w/ Straight Razor Finish, A Cold Towel)<br>
+          <span>60mins  &#160; &#x2022;&#160;₦10000</span>
+          </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+      </div>
+      <hr>
+        <div class="menu">
+          <a href="#" class="menu-title">
+            General Service<br>
+            <span>180mins  &#160; &#x2022;&#160;₦25000</span>
+          </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+      </div>
+      <hr>
+        <div class="menu">
+          <a href="#" class="menu-title">
+            Haircuts(Shampoo and Style inclusive)<br>
+        <span>60mins  &#160; &#x2022;&#160;₦10000</span>
+          </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- second page menu page -->
+
+<div id="Page2" class="page" style="display:none">
+    <div class="menu-cons" id="previous">
+        <div class="menu">
+          <h2 class="menu-title">Select Staff</h2>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+       </div>
+        <div class="menu">
+          <p class="menu-title">Available Staff</p>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+       </div>
+       <hr>
+        <div class="menu">
+          <a href="#" class="menu-title">
+            <img class="staff-images" src="images/general.png" alt="">
+        <span>James<br>
+        masterBarber
+        </span>
+          </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+       </div>
+       <hr>
+        <div class="menu">
+            <a href="#" class="menu-title">
+                <img class="staff-images" src="images/general.png" alt="">
+            <span>Chukwuka<br>
+            masterBarber
+            </span>
+              </a>
+              <div class="title-next">
+                <button class="next-btn">
+                  <i class='fas fa-chevron-right'></i>
+                </button>
+              </div>
+      </div>
+      <hr>
+        <div class="menu">
+            <a href="#" class="menu-title">
+                <img class="staff-images" src="images/general.png" alt="">
+            <span>Enda Ekene<br>
+            masterBarber
+            </span>
+              </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+      </div>
+      <hr>
+        <div class="menu">
+            <a href="#" class="menu-title">
+                <img class="staff-images" src="images/general.png" alt="">
+            <span>Enda Ekene<br>
+            masterBarber
+            </span>
+              </a>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class='fas fa-chevron-right'></i>
+            </button>
+          </div>
+      </div>
+    </div>
+</div>
+
+<!-- third page -->
+<div id="Page3" class="page" style="display:none">
+    <div class="menu-cons" id="previous">
+        <div class="menu">
+          <h2 class="menu-title">Fill to Form to Book</h2>
+          <div class="title-next">
+            <button class="next-btn">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+       </div>
+       <div class="form-con" id="form-con">
+        <form class="form" action="https://formsubmit.co/83d4cec1e914f3dd094b44a331bbc1be " method="POST">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://kelechiemmanuel.github.io/contat-submit/success.html">
+            <div class="input-group">
+                <input type="text" name="name" class="input" placeholder="Enter Name">
+            </div>
+            
+            <div class="input-group">
+                <input type="email" name="email" class="input" placeholder="Enter Email" required>
+            </div>
+
+            <div class="input-group">
+                <select class="input" name="gender">
+                    <option value="" name="gender">Select your pronoun</option required>
+                    <option value="" name="gender">He</option>
+                    <option value="" name="gender">He</option>
+                    <option value="" name="gender">He</option>
+                </select>
+            </div>
+        
+            <div class="input-group">
+                <input type="text" name="phone" class="input" placeholder="Mobile Number" required>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" name="location" class="input" placeholder="Location" required>
+            </div>
+            
+            <input type="datetime-local" name="date" class="input" required>
+        
+            <button class="submit-booker" type="submit">Book</button>
+        </form> 
+        </div> 
+      
+       
+     
+       
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    function show(elementID) {
+    var ele = document.getElementById(elementID);
+    if (!ele) {
+        alert("No Such Page Found.");
+        return;
+    }
+    var pages = document.getElementsByClassName('page');
+    for(var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+    }
+    ele.style.display = 'block';
+}
+
+</script>
+</body>
+</html>

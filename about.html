@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
+
+      body{
+        margin: 0;
+        padding: 0;
+      }
 .about-section{
     display: flex;
     justify-content: center;
@@ -115,7 +120,7 @@
   color: #fff;
 }
 .news-letter{
-  width: 300px;
+  width: 290px;
   color: #fff;
 }
 .placeholder{
@@ -261,9 +266,13 @@
   text-align: center;
 }
 
+.watch-title{
+  font-size: 40px;
+}
 .wordCarousel div {
   overflow: hidden;
   position: relative;
+  right: 20px;
   height: 65px;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -273,7 +282,7 @@
   font-weight: 700;
   padding: 0 10px;
   height: 45px;
-  font-size: 20px;
+  font-size: 40px;
   color: #fff;
   margin-bottom: 40px;
   display: block;
@@ -451,6 +460,117 @@
     margin-top: -270px;
   }
 }
+
+@media screen and (min-width: 1100px){
+    .open-up{
+      display: none;
+    }
+    .box-con{
+      display: none;
+    }
+    
+  }
+
+  @media screen and (max-width: 1100px) {
+    .when-visit{
+      height: 100vh;
+    }
+    .add-carting{
+      background: none;
+    }
+    .boxingz{
+      width: 100%;
+    }
+  
+    .home{
+      background: none;
+      display: grid;
+  
+    }
+    .open-up{
+      display: block;
+    }
+    .add-cart{
+      margin-top: 1px;
+    }
+    .auto{
+      margin-top: -70px;
+    }
+  
+    .open-up{
+      margin-right: 60px;
+    }
+    .small{
+      display: none;
+    }
+    .nav-items{
+      display: none;
+    }
+    
+    .footer-con{
+      width: 100%;
+    }
+    .footer-items{
+      flex-direction: column;
+      justify-content: center;
+    } 
+    .footer{
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .book-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .watch-con{
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .introduction-flex{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .profile-sec{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header{
+      width: 100%;
+    }
+  
+    .slide img{
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .middle-side{
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .add-cart{
+      display: grid;
+    }
+
+    .middle-side{
+      max-width: 200px;
+      width: 100%;
+    }
+  
+    .up-arrow-btn{
+      display: none;
+    }
+  }
     </style>
 </head>
 <body>
@@ -565,8 +685,10 @@
         <div class="footer">
         <h3 class="footer-title">Newsletter</h3>
         <p class="news-letter">
-          Be the first to know about our exclusive products and offers. 
-          Enter your e-mail and subscribe to our newsletter. Thank you
+          Scissors & Scotch is the grooming experience every man 
+          deserves - where traditional barbering and modern spa services
+           meet your favorite watering hole. Sit back, relax, get groomed,
+            then enjoy a cocktail, coffee, or cold one in our private lounge.
         </p>
         <form class="news-sender" action="#">
         <input class="placeholder" type="text" placeholder="Enter Your E-mail">

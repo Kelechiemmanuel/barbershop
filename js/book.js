@@ -1,3 +1,6 @@
+function loginPop() {
+    document.getElementById('forms').style.display = 'flex';
+}
 function booking() {
     document.querySelector('.middle-side-booking').style.display = 'block';
     document.querySelector('.middle-side-service').style.display = 'none';
