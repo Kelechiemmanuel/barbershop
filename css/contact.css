@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    .box-con{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgb(49, 49, 49);
+    }
+    .box{
+    width: 100%;
+    position: relative;
+    padding: 8px;
+    padding-left: 50px;
+    margin-top: 150px;
+    }
+    .box a{
+    display: block;
+    text-align: left;
+    letter-spacing: 3px;
+    padding: 12px;
+    font-size: 20px;
+    color:  rgba(199, 176, 130, 1);
+    text-decoration: none;
+    margin-left: 40px;
+    }
+    .opennav{
+    font-size: 20px;
+    }
+    .closebtn{
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    color: rgb(75, 70, 70);
+    font-weight: bolder;
+    text-decoration: none;
+    }
+    .closebtn:hover{
+    text-decoration: none;
+    color: rgb(75, 70, 70);
+    }
+    .open-up{
+    cursor: pointer;
+    color: rgb(163, 156, 156);
+    font-size: 25px;
+    }
+    .nav-bar{
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid rgba(199, 176, 130, 1);
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    }
+    .nav-items a{
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.8s;
+    }
+
+    .nav-bar a:hover{
+    color: rgba(199, 176, 130, 1);
+    text-decoration: underline;
+    }
+    .nav-bar a:focus{
+    color: rgba(199, 176, 130, 1);
+    text-decoration: underline;
+    }
+
+    .logo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 200px;
+    border: 4px solid rgba(49, 49, 49, 0.945);
+    }
+
+    .logo-img{
+        width: 140px;
+        object-fit: cover;
+        height: 140px;
+    }
+
+    .logo-img2{
+        width: 80px;
+        border-radius: 100px;
+        object-fit: cover;
+        height: 80px;
+    }
+    .break{
+    color: rgba(199, 176, 130, 1);
+    font-family: Dancing Script;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    }
+
+    .swide-container{
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 0;
+    transition: 0.5s;
+    z-index: 100;
+    top: 40%;
+    }
+
+    .slideer{
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    margin-left: -2px;
+    border: 1px solid rgba(199, 176, 130, 1);
+    }
+
+    .help-img{
+    width: 80px;
+    border-radius: 50%;
+    }
+    .closebtn2{
+    position: absolute;
+    right: 100px;
+    top: 8px;
+    font-size: 25px;
+    color: gray;
+    text-decoration: none;
+    }
+
+    .closebtn2:hover{
+    color: gray;
+    text-decoration: none;
+    }
+
+    .slide-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(199, 176, 130, 1);
+    border-radius: 50px;
+    }
+
+
+    .chat-btn{
+    text-align: center;
+    color: #fff;
+    }
+
+    .open-button {
+    background: none;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: -20px;
+    opacity: 0.8;
+    right: 28px;
+    width: 280px;
+    }
+
+    .inside-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding-bottom: 20px;
+    }
+    .clicks{
+    font-size: 20px;
+    color: rgba(199, 176, 130, 1);
+    }
+    .click{
+    font-size: 20px;
+    color: rgba(199, 176, 130, 1);
+    }
+
+    .chat-popup {
+    display: none;
+    width: 30%;
+    height: 92%;
+    position: fixed;
+    transition: 0.5s;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    z-index: 9;
+    }
+
+    .form-container .cancel {
+    font-size: 30px;
+    top: -13%;
+    color: white;
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+    }
+
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }
+    .super{
+    opacity: 0.8;
+    text-decoration: none;
+    }
+    .super:hover{
+    opacity: 1;
+    }
+
+    .chat{
+    position: absolute;
+    bottom: 0;
+    height:85%; 
+    width:100%;
+    display:flex;
+    flex-direction:column ;
+    justify-content:flex-end;
+    align-items:center;
+
+    
+    }
+    .chat_body{
+    position: relative;
+    right: -70px;
+    width: 50%;
+    max-height:100%;
+    overflow-y:auto;
+    }
+
+
+    .chat_input{
+    
+    width:100%;
+    height:20%;
+    display:flex;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background: rgba(199, 176, 130, 1);
+    }
+    .in,.send{
+    padding:.5rem;
+    outline:0;
+    border:none;
+    }
+    .in{
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    }
+
+    .send{
+    background: rgba(199, 176, 130, 1);
+    color:white;
+    border-radius:20px;
+    font-size:1.1rem;
+    }
+    .msg{
+    padding:1rem;
+    
+    }
+    .msg-rt{
+    background: lightgray;
+    padding:.5rem;
+    border-radius:20px 20px 0 20px;
+    color: black;
+    padding-left:1rem;
+    padding-right:1rem;
+    }
+
+    .msg-lf{
+    background:#5CB5E9;
+    color:#f7f7f7;
+    padding:.5rem;
+    border-radius:0 20px 20px 20px ;
+    padding-left:1rem;
+    padding-right:1rem;
+    }
+
+    .clear{
+    clear:both;
+    }
+    .left{
+    float:left;
+    }
+    .right{
+    float: right ;
+    }
+    .popin{
+    width: 0;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.788);
+    }
+    .closure{
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    float: right;
+    }
+    .btn-cancel{
+    background: none;
+    font-size: 30px;
+    color: black;
+    border: none;
+    }
+
+    .content{
+    position: absolute;
+    left: 40%;
+    right: 50%;
+    top: 20%;
+    }
+
+    .logo{
+        font-family: Dancing Script;
+        font-size: 20px;
+    }
+
+    .breaker{
+        text-align: center;
+        line-height: 0.8;
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: gray;
+    }
+.contact-con{
+    margin: 130px auto;
+    width: 60%;
+}
+hr{
+    border: 1px solid rgb(224, 218, 218);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* margin-right: 400px; */
+}
+
+.contact-con p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: gray;
+    line-height: 2;
+}
+
+.contact-con h3{
+    line-height: 2;
+}
+.contact-con h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.email-chat{
+    margin-bottom: 200px;
+    color: black;
+}
+
+.footer-con{
+margin-top: 100px;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-image: url(../images/shopp2.jpg);
+background-color: black;
+}
+
+.footer-items{
+display: flex;
+background-color:  rgba(49, 49, 49, 0.945);
+    padding: 50px 20px;
+justify-content: space-around;
+}
+
+.iconization{
+display: flex;
+align-items: center;
+}
+.iconize{
+margin-top: 10px;
+color: #fff;
+}
+.news-letter{
+width: 300px;
+color: #fff;
+}
+.placeholder{
+padding: 5px 10px;
+max-width: 240px;
+background-color: #fff;
+border-radius: 5px;
+border: none;
+outline: none;
+}
+.news-sender{
+display: flex;
+justify-content: space-between;
+border-radius: 5px;
+background-color: #fff;
+max-width: 280px;
+}
+
+.shop-no{
+color: #fff;
+margin-top: 10px;
+}
+
+.sender{
+padding: 10px 10px;
+border-radius: 0 5px 5px 0;
+border: none;
+background-color: rgba(199, 176, 130, 1);
+border: none;
+
+}
+.bars{
+display: flex;
+margin-top: 10px;
+align-items: center;
+list-style: none;
+}
+
+.arrow{
+cursor: pointer;
+transition: 0.5s;
+color: rgba(199, 176, 130, 1);
+}
+.arrows{
+transition: 0.5s;
+color: #fff;
+}
+.arrow:hover{
+transform: translateX(5px);
+}
+.arrows:hover{
+transform: translateX(5px);
+}
+
+.footer-link{
+color: #fff;
+text-decoration: none;
+}
+
+.footer-title{
+color: #fff;
+}
+
+.right{
+text-align: center;
+}
+.develop{
+color: #acabab;
+margin-top: 115px;
+}
+
+.chat-btn{
+text-align: center;
+color: #fff;
+}
+
+.open-button {
+background: none;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+margin-top: -20px;
+opacity: 0.8;
+right: 28px;
+width: 280px;
+}
+
+.inside-link{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+}
+.clicks{
+font-size: 20px;
+color: rgba(199, 176, 130, 1);
+}
+.click{
+font-size: 20px;
+color: rgba(199, 176, 130, 1);
+}
+
+.up-arrow-btn{
+position: fixed;
+right: 30px;
+bottom: 50px;
+background-color: rgba(199, 176, 130, 1);
+border-radius: 5px;
+border: none;
+padding: 2px 5px;
+}
+
+.social-title{
+color: #fff;
+margin-top: 15px;
+}
+
+.social{
+color: gray;
+background-color: white;
+font-size: 20px;
+border-radius: 3px;
+padding: 10px;
+transition: 0.5s;
+}
+.social:hover{
+color: white;
+background-color: rgba(199, 176, 130, 1);
+font-size: 20px;
+border-radius: 3px;
+padding: 10px;
+}
+
+.up-arrow{
+color: #fff;
+font-size: 40px;
+font-weight: bolder;
+}
+
+@media screen and (min-width: 1100px){
+.open-up{
+    display: none;
+}
+.box-con{
+    display: none;
+}
+
+}
+
+
+@media screen and (max-width: 1100px) {
+.introduction-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slide img{
+    max-width: 400px;
+    width: 100%;
+}
+.when-visit{
+    height: 100vh;
+}
+.add-carting{
+    background: none;
+}
+.boxingz{
+    width: 100%;
+}
+
+.home{
+    background: none;
+    display: grid;
+
+}
+.open-up{
+    display: block;
+}
+
+.watch-con{
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-cart{
+    margin-top: 1px;
+}
+.auto{
+    margin-top: -70px;
+}
+
+.open-up{
+    margin-right: 60px;
+}
+.small{
+    display: none;
+}
+.nav-items{
+    display: none;
+}
+
+.footer-con{
+    width: 100%;
+}
+.footer-items{
+    flex-direction: column;
+} 
+.footer{
+    margin-bottom: 50px;
+}
+}

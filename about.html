@@ -8,572 +8,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/about.css">
     <title>Document</title>
-    <style>
-
-      body{
-        margin: 0;
-        padding: 0;
-      }
-.about-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./images/shoppppppppp.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-.about-con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.774);
-}
-.about-con2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0 20px 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(75, 70, 70);
-}
-.about-con3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0 40px 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgb(75, 70, 70); */
-}
-.header{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 40px;
-    color: #fff;
-}
-.header2{
-    text-align: center;
-    width: 70%;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-}
-.header3{
-    text-align: center;
-    width: 70%;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    color: gray;
-}
-
-.story-line{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-.book{
-    text-align: center;
-    margin-bottom: 50px;
-}
- .book button{
-    padding: 20px 30px;
-    border: 1px solid rgba(199, 176, 130, 1);
-    color: #fff;
-    font-size: 16px;
-    background: none;
- }
-
-  .footer-con{
-  margin-top: 100px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url(./images/shopp2.jpg);
-  background-color: black;
-}
-
-.footer-items{
-  display: flex;
-  background-color:  rgba(49, 49, 49, 0.945);
-    padding: 50px 20px;
-  justify-content: space-around;
-}
-
-.iconization{
-  display: flex;
-  align-items: center;
-}
-.iconize{
-  margin-top: 10px;
-  color: #fff;
-}
-.news-letter{
-  width: 290px;
-  color: #fff;
-}
-.placeholder{
-  padding: 5px 10px;
-  max-width: 240px;
-  background-color: #fff;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-.news-sender{
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: #fff;
-  max-width: 280px;
-}
-
-.shop-no{
-  color: #fff;
-  margin-top: 10px;
-}
-
-.sender{
-  padding: 10px 10px;
-  border-radius: 0 5px 5px 0;
-  border: none;
-  background-color: rgba(199, 176, 130, 1);
-  border: none;
-
-}
-.bars{
-  display: flex;
-  margin-top: 10px;
-  align-items: center;
-  list-style: none;
-}
-
-.arrow{
-  cursor: pointer;
-  transition: 0.5s;
-  color: rgba(199, 176, 130, 1);
-}
-.arrows{
-  transition: 0.5s;
-  color: #fff;
-}
-.arrow:hover{
- transform: translateX(5px);
-}
-.arrows:hover{
- transform: translateX(5px);
-}
-
-.footer-link{
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-title{
-  color: #fff;
-}
-
-.right{
-  text-align: center;
-}
-.develop{
-  color: #acabab;
-  margin-top: 115px;
-}
-
-.chat-btn{
-  text-align: center;
-  color: #fff;
-}
-
-.open-button {
-  background: none;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  margin-top: -20px;
-  opacity: 0.8;
-  right: 28px;
-  width: 280px;
-}
-
-.inside-link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-}
-.clicks{
-  font-size: 20px;
-  color: rgba(199, 176, 130, 1);
-}
-.click{
-  font-size: 20px;
-  color: rgba(199, 176, 130, 1);
-}
-
-.up-arrow-btn{
-  position: fixed;
-  right: 30px;
-  bottom: 50px;
-  background-color: rgba(199, 176, 130, 1);
-  border-radius: 5px;
-  border: none;
-  padding: 2px 5px;
-}
-
-.social-title{
-  color: #fff;
-  margin-top: 15px;
-}
-
-.social{
-  color: gray;
-  background-color: white;
-  font-size: 20px;
-  border-radius: 3px;
-  padding: 10px;
-  transition: 0.5s;
-}
-.social:hover{
-  color: white;
-  background-color: rgba(199, 176, 130, 1);
-  font-size: 20px;
-  border-radius: 3px;
-  padding: 10px;
-}
-
-.up-arrow{
-  color: #fff;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.wordCarousel{
-  margin-top: 70px;
-  text-align: center;
-}
-
-.watch-title{
-  font-size: 40px;
-}
-.wordCarousel div {
-  overflow: hidden;
-  position: relative;
-  right: 20px;
-  height: 65px;
-  padding-top: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.wordCarousel div li {
-  font-weight: 700;
-  padding: 0 10px;
-  height: 45px;
-  font-size: 40px;
-  color: #fff;
-  margin-bottom: 40px;
-  display: block;
-}
-
-.flip2 {
-  -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
-.flip3 {
-  -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
-.flip4 {
-  -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-}
-
-@-webkit-keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@keyframes flip2 {
-  0% {
-    margin-top: -180px;
-  }
-  5% {
-    margin-top: -90px;
-  }
-  50% {
-    margin-top: -90px;
-  }
-  55% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-@-webkit-keyframes flip3 {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-@keyframes flip3 {
-  0% {
-    margin-top: -270px;
-  }
-  5% {
-    margin-top: -180px;
-  }
-  33% {
-    margin-top: -180px;
-  }
-  38% {
-    margin-top: -90px;
-  }
-  66% {
-    margin-top: -90px;
-  }
-  71% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-@-webkit-keyframes flip4 {
-  0% {
-    margin-top: -360px;
-  }
-  5% {
-    margin-top: -270px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  30% {
-    margin-top: -180px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  55% {
-    margin-top: -90px;
-  }
-  75% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-@keyframes flip4 {
-  0% {
-    margin-top: -360px;
-  }
-  5% {
-    margin-top: -270px;
-  }
-  25% {
-    margin-top: -270px;
-  }
-  30% {
-    margin-top: -180px;
-  }
-  50% {
-    margin-top: -180px;
-  }
-  55% {
-    margin-top: -90px;
-  }
-  75% {
-    margin-top: -90px;
-  }
-  80% {
-    margin-top: 0px;
-  }
-  99.99% {
-    margin-top: 0px;
-  }
-  100% {
-    margin-top: -270px;
-  }
-}
-
-@media screen and (min-width: 1100px){
-    .open-up{
-      display: none;
-    }
-    .box-con{
-      display: none;
-    }
-    
-  }
-
-  @media screen and (max-width: 1100px) {
-    .when-visit{
-      height: 100vh;
-    }
-    .add-carting{
-      background: none;
-    }
-    .boxingz{
-      width: 100%;
-    }
-  
-    .home{
-      background: none;
-      display: grid;
-  
-    }
-    .open-up{
-      display: block;
-    }
-    .add-cart{
-      margin-top: 1px;
-    }
-    .auto{
-      margin-top: -70px;
-    }
-  
-    .open-up{
-      margin-right: 60px;
-    }
-    .small{
-      display: none;
-    }
-    .nav-items{
-      display: none;
-    }
-    
-    .footer-con{
-      width: 100%;
-    }
-    .footer-items{
-      flex-direction: column;
-      justify-content: center;
-    } 
-    .footer{
-      margin-bottom: 50px;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .book-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    .watch-con{
-      max-width: 400px;
-      width: 100%;
-    }
-
-    .introduction-flex{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    .profile-sec{
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .header{
-      width: 100%;
-    }
-  
-    .slide img{
-      max-width: 400px;
-      width: 100%;
-    }
-
-    .middle-side{
-      max-width: 400px;
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .add-cart{
-      display: grid;
-    }
-
-    .middle-side{
-      max-width: 200px;
-      width: 100%;
-    }
-  
-    .up-arrow-btn{
-      display: none;
-    }
-  }
-    </style>
 </head>
 <body>
+  <div id="myNav" class="box-con">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="box">
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="book-me.html">Book</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </ul>
+</div>
+
+<div class="nav-bar">
+  <div class="logo-con">
+    <img class="logo-img" src="images/logo-removebg-preview.png" alt="">
+</div>
+    <ul class="nav-items">
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="book-me.html">Book</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </ul>
+  <p class="open-up" onclick="openNav()">&#9776;</p>
+</div>
+
+<section class="swipe-container">
+<div id="slide" class="swide-container">
+<div class="slideer">
+  <a href="javascript:void(0)" class="closebtn2" onclick="slideShow()">&times;</a>
+  <div class="swipe-inner">
+    <h3>We are here for you</h3>
+    <a class="super" href="#">
+      <span class="material-icons clicks">phone</span>
+      <span class="click">08148611216</span>
+  </a>
+  <button class="open-button" onclick="openForm()">
+      <a class="inside-link" href="#">
+      
+  <i class='fas fa-comment-dots clicks'></i>
+      <span class="click">Livechat</span>
+      </a>
+  </button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container">
+      <div class="chat">
+          <button type="button" class="btn cancel" onclick="closeForm()">&times;</button> 
+  
+          <div class="chat_body"> 
+      
+            
+            
+            </div>   
+            <div class="chat_input">
+                <input type="text" class="in" placeholder="Start a Conversation...">
+                <button class="send">
+                  <span class="material-icons arrows">send</span>
+                </button>
+            </div>  
+            </div> 
+    </form>
+  </div>
+  </div>
+</div>
+
+<div class="slide-button">
+  <h3 class="open-up2" onclick="openHelp()">
+    <img class="help-img" src="images/help2.png" alt="">
+  </h3>
+</div>
+</div>
+</section>
     <section class="about-section">
         <div class="about-con">
         <div class="about">
@@ -630,19 +140,22 @@
     <section class="footer-con">
         <footer class="footer-items">
         <div class="footer">
-        <h1 class="logo">Watch <span class="break">Zone</span></h2> 
-        <div class="iconization">
-        <span class="material-icons iconize">location_on</span>
-        <span class="shop-no">Shop No.5, 2nd floor Yemi plaza, off Freedom way, Lekki.</span>
+          <div class="logo-con">
+            <img class="logo-img2" src="images/logo.jpg" alt="">
         </div>
+
         <div class="iconization">
-          <span class="material-icons iconize">mail</span>
-          <span class="shop-no">sales@watchzone.com.ng</span>
-        </div>
-        <div class="iconization">
-          <span class="material-icons iconize">phone</span>
-          <span class="shop-no">(+234)7030310373</span>
-        </div>
+          <span class="material-icons iconize">location_on</span>
+          <span class="shop-no">Shop No.49, Ezza Rd Presco Campus Ebsu.</span>
+          </div>
+          <div class="iconization">
+            <span class="material-icons iconize">mail</span>
+            <span class="shop-no">ikeoguogonna@gmail.com</span>
+          </div>
+          <div class="iconization">
+            <span class="material-icons iconize">phone</span>
+            <span class="shop-no">(+234)07061202609</span>
+          </div>
         
         <div class="social-info">
           <h3 class="social-title">SOCIAL INFO</h3>
@@ -685,10 +198,8 @@
         <div class="footer">
         <h3 class="footer-title">Newsletter</h3>
         <p class="news-letter">
-          Scissors & Scotch is the grooming experience every man 
-          deserves - where traditional barbering and modern spa services
-           meet your favorite watering hole. Sit back, relax, get groomed,
-            then enjoy a cocktail, coffee, or cold one in our private lounge.
+          ST JAMES is the grooming experience every man deserves - where
+          traditional barbering services meets all your need. Sit back, relax and  get groomed.
         </p>
         <form class="news-sender" action="#">
         <input class="placeholder" type="text" placeholder="Enter Your E-mail">
@@ -702,5 +213,12 @@
         <button class="up-arrow-btn">
         <a href="#">  <span class="material-icons up-arrow">expand_less</span></a>
         </button>
+
+
+
+
+
+
+        <script src="js/about.js"></script>
 </body>
 </html>
