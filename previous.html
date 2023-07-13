@@ -47,7 +47,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        /* overflow: hidden; */
         max-width: 600px;
         height: 50px;
       }
@@ -58,7 +57,7 @@
         max-width: 600px;
         height: 100%;
         transition: 0.5s;
-        padding: 60px 0 100px 0;
+        padding: 100px 0 100px 0;
         background-color: rgb(75, 70, 70);
       }
       .menu-con{
@@ -112,9 +111,15 @@
        transition: 0.8s;
       }
 
-      hr{
+      .hori2{
         width: 100%;
-        max-width: 600px;
+        max-width: 500px;
+        margin-left: -1px;
+      }
+
+      .hori{
+        width: 100%;
+        max-width: 500px;
       }
 
       .staff-images{
@@ -137,7 +142,7 @@
         border-radius: 50px;
         outline: none;
         border: 1px solid lightgray;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .form{
@@ -216,17 +221,22 @@
         display: none;
     }
     .show-con1{
-      margin: auto;
-        max-width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: fixed;
+        max-width: 360px;
         width: 100%;
-        height: 100px;
+        height: 100%;
         background-color: burlywood;
     }
 
     .section-con{
       max-width: 600px;
       width: 100%;
-      margin: auto;
+      padding-top: 40px;
+      margin: 50px auto;
     }
 
     .toolbar {
@@ -260,30 +270,66 @@
     background-color: red;
 }
 
-/* Cart page */
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
+.hairs{
+  color: #fff;
 }
 
-thead {
-    background-color: antiquewhite;
+.next-btn2{
+  padding: 5px 50px;
+}
+.next-btn2{
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 20px;
+  background: none;
+  cursor: pointer;
+  padding: 5px 50px;
+}
+.class{
+  color: #fff;
+  border: 1px solid white;
+  background: none;
+  padding: 5px 20px;
 }
 
-td {
-    padding: 5px;
+.hair-style{
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
 }
 
-tr:nth-child(even) {
-    background-color: azure;
+.menu-logo2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-    
-    /* .style{
-      width: 160px;
-      margin-right: 20px;
-    } */
+
+.image-3{
+  width: 50px;
+}
+
+.cart-2{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.cols{
+  position: fixed;
+  top: 8%;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: #04AA6D;
+}
+
+
     </style>
 </head>
 <body>
@@ -292,25 +338,19 @@ tr:nth-child(even) {
         <span onclick="show('Page2');">2</span>
         <span onclick="show('Page3');">3</span>
     </div>
-    <div class="show-con1">
 
-      <div class="toolbar">
-        <p>
-            <a href="cart.html">
-                Cart items:
-                <span id="count">0</span>, Price:
-                <span id="sum">0</span>
-            </a>
-        </p>
+    <div id="show-con1" class="show-con1">
+    <div id="cart">
+      <div class="cart-2">
+        <img class="image-3" src="images/STB (1).png" alt="">
+      </div>
+      <ul id="cart-items"></ul>
+      <!-- <button class="class" onclick="clearCart()">Clear Cart</button> -->
+      </div>
     </div>
-
-    </div>
-
-
-
 <!-- first page menu page -->
 <section class="section-con">
-<div id="Page1" class="page" style="display:block">
+<div id="Page1" class="page" style="display:block; position: relative;">
     <div class="menu-cons" id="previous">
         <div class="menu">
           <h2 class="menu-title">Menu</h2>
@@ -325,108 +365,58 @@ tr:nth-child(even) {
           <div class="title-next">
           </div>
        </div>
-       <hr>
+       <hr class="hori">
 
-       <div class="products">
-        <div class="product">
-          <div class="menu-logo">
-            <p>Haircuts(Shampoo and Style inclusive)
-              <p>80mins: &#160; ₦10000</p>
-            </p>
-          </div>
-            <button class="next-btn" data-id="1" data-price="10000" data-title="Product one" onclick="show('Page2');">&plus;</button>
-        </div>
-        <hr>
-
-        <div class="product">
-          <div class="menu-logo">
-            <p>General Service
-              <p>180mins: &#160; ₦25000</p>
-            </p>
-          </div>
-            <button class="next-btn" data-id="2" data-price="25000" data-title="Product two" onclick="show('Page2');">
-              &plus;
-            </button>
-        </div>
-        <hr>
-
-        <div class="product">
-          <div class="menu-logo">
-            <p>Haircut and Beard Trim
-              <p>120mins: &#160; ₦15000</p>
-            </p>
-          </div>
-            <button class="next-btn" data-id="3" data-price="15000" data-title="Product three" onclick="show('Page2');">
-              &plus;         
-            </button>
-        </div>
-        <hr>
-
-        <div class="product">
-          <div class="menu-logo">
-            <p>Beard Trim (w/ Straight Razor Finish, A Cold Towel)
-              <p>80mins: &#160; ₦10000</p>
-            </p>
-          </div>
-            <button class="next-btn" data-id="4" data-price="10000" data-title="Product four" onclick="show('Page2');">
-              &plus;
-            </button>
-        </div>
-        <hr>
+       <div id="products">
+        <ul id="product-items">
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-style" src="images/hairs2.jpg" alt="">
+                <p class="hairs">Haircuts(Shampoo and Style inclusive)</p>
+                <p class="hairs">80mins: &#160; ₦10,000</p>
+                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦10,000', 'images/hairs2.jpg')">Add</button>
+              </div>
+                <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <hr class="hori2">
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-style" src="images/beard.jpg" alt="">
+                <p class="hairs">Haircut and Beard Trim</p>
+                <p class="hairs">80mins: &#160; ₦15,000</p>
+                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦15,000', 'images/beard.jpg')">Add</button>
+              </div>
+                <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <hr class="hori2">
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-style" src="images/beard2.jpg" alt="">
+                <p class="hairs">Beard Trim (w/ Straight Razor Finish, A Cold Towel)</p>
+                <p class="hairs">80mins: &#160; ₦10,000</p>
+                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦10,000', 'images/beard.jpg')">Add</button>
+              </div>
+                <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <hr class="hori2">
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-style" src="images/beard3.jpg" alt="">
+                <p class="hairs">General Service</p>
+                <p class="hairs">180mins: &#160; ₦25,000</p>
+                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦25,000', 'images/beard3.jpg')">Add</button>
+              </div>
+                <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <hr class="hori2">
+        </ul>
     </div>
-        <!-- <div class="menu" onclick="show('Page2');">
-          <a href="#" class="menu-title">
-            <span class="style">Haircut and Beard Trim</span><br>
-        <span> &#160;120mins  &#160; &#x2022;&#160;₦15000</span>
-          </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-       </div>
-       <hr> -->
-        <!-- <div class="menu" onclick="show('Page2');">
-          <a href="#" class="menu-title">
-            <span class="style">Beard Trim (w/ Straight Razor Finish, A Cold Towel)</span><br>
-          <span>60mins  &#160; &#x2022;&#160;₦10000</span>
-          </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-      </div>
-      <hr>
-        <div class="menu" onclick="show('Page2');">
-          <a href="#" class="menu-title">
-            <span class="style"> General Service</span><br>
-            <span>180mins  &#160; &#x2022;&#160;₦25000</span>
-          </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-      </div>
-      <hr> -->
-        <!-- <div class="menu">
-          <a href="#" class="menu-title" onclick="show('Page2');">
-            <span class="style">Haircuts(Shampoo and Style inclusive)</span><br>
-        <span>60mins  &#160; &#x2022;&#160;₦10000</span>
-          </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-      </div> -->
     </div>
 </div>
 
 <!-- second page menu page -->
 
-<div id="Page2" class="page" style="display:none">
+<div id="Page2" class="page" style="display:none; height: 75vh; width: 600px;">
     <div class="menu-cons" id="previous">
         <div class="menu">
           <h2 class="menu-title">Select Staff</h2>
@@ -498,7 +488,7 @@ tr:nth-child(even) {
 </div>
 
 <!-- third page -->
-<div id="Page3" class="page" style="display:none">
+<div id="Page3" class="page" style="display:none; height: 75vh;" onclick="pageClick()">
     <div class="menu-cons" id="previous">
         <div class="menu">
             <i onclick="show('Page2');" class='fas fa-chevron-left left-arrows'></i>
@@ -539,11 +529,12 @@ tr:nth-child(even) {
             <button class="submit-booker" type="submit">Book</button>
         </form> 
         </div> 
-      
-
     </div>
 </div>
+
 </section>
+
+<div class="cols"></div>
 
 
 
@@ -561,78 +552,58 @@ tr:nth-child(even) {
     }
     var pages = document.getElementsByClassName('page');
     for(var i = 0; i < pages.length; i++) {
-        pages[i].style.display = 'none';
-        
+        pages[i].style.display = 'none';   
     }
     ele.style.display = 'block';
 }
 
+        // Array to store the cart items
+        let cartItems = [];
 
-
-
-let count = 0;
-let sum = 0;
-let cart = {};
-
-updateCart();
-
-let btns = document.querySelectorAll(".products button");
-
-for (let i = 0; i < btns.length; i++) {
-    let btn = btns[i];
-    btn.addEventListener("click", add);
-
-    // id = btn.dataset.id;
-    // if (cart.indexOf(id) >= 0) {
-    //     btn.className = "added";
-    //     btn.textContent = "Remove";
-    // }
+// Function to add items to the cart
+function addToCart(name, image) {
+    cartItems.push({ name: name, image: image });
+    displayCartItems();
 }
 
-function add(event) {
-    let price = Number(event.target.dataset.price);
-    let title = event.target.dataset.title;
-    let id = event.target.dataset.id;
-
-if (id in cart) {
-    cart[id].qty++;
-} else {
-    let cartItem = {
-        title: title,
-        price: price,
-        qty: 1
-    };
-    cart[id] = cartItem
+// Function to remove items from the cart
+function removeFromCart(index) {
+    cartItems.splice(index, 1);
+    displayCartItems();
 }
 
-    count++;
-    sum += price;
-
-    console.log(cart);
-
-    // let index = cart.indexOf(event.target.dataset.id);
-    // if (index >= 0) {
-    //     cart.splice(index, 1);
-    //     count--;
-    //     sum -= price;
-    //     event.target.className = "";
-    //     event.target.textContent = "Add to cart";
-    // } else {
-    //     cart.push(event.target.dataset.id);
-    //     count++;
-    //     sum += price;
-    //     event.target.className = "added";
-    //     event.target.textContent = "Remove";
-    // }
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCart();
+// Function to clear the cart
+function clearCart() {
+    cartItems = [];
+    displayCartItems();
 }
 
-function updateCart() {
-    document.getElementById("sum").textContent = sum;
-    document.getElementById("count").textContent = count;
-    localStorage.setItem("sum", sum);
-    localStorage.setItem("count", count);
+// Function to display the cart items
+function displayCartItems() {
+    const cartItemsList = document.getElementById('cart-items');
+    cartItemsList.innerHTML = '';
+
+    for (let i = 0; i < cartItems.length; i++) {
+        const item = cartItems[i];
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        li.appendChild(img).style.width = '100px';
+        const p = document.createElement('p');
+        p.textContent = item.name;
+        li.appendChild(p);
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = function() {
+            removeFromCart(i);
+        };
+        li.appendChild(removeButton).style.background = 'none';
+        li.appendChild(removeButton).style.border = '1px solid white';
+        li.appendChild(removeButton).style.color = 'white';
+        li.appendChild(removeButton).style.marginBottom = '10px';
+        cartItemsList.appendChild(li).style.listStyle = 'none';
+    }
 }
 
 </script>

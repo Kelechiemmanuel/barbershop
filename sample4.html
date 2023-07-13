@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #cart, #products {
+    float: left;
+    margin-right: 20px;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+#products li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+#products li img {
+    width: 100px;
+    height: 100px;
+}
+
+#products li p {
+    margin-top: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+button{
+    width: 100px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <div id="products">
+        <h2>Products</h2>
+        <ul id="product-items">
+            <li>
+                 <p>rrrrrrrrrrrrrr</p>
+                <p>Product 1</p>
+                <button onclick="addToCart('rrrrrrrr', '')">Add to Cart</button>
+            </li>
+            <li>
+                <img src="images/brush.png" alt="Product 2">
+                <p>Product 2</p>
+                <button onclick="addToCart('Product 2', 'images/brush.png')">Add to Cart</button>
+            </li>
+            <li>
+                <img src="images/chair.png" alt="Product 3">
+                <p>Product 3</p>
+                <button onclick="addToCart('Product 3', 'images/chair.png')">Add to Cart</button>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        // Array to store the cart items
+let cartItems = [];
+
+// Function to add items to the cart
+function addToCart(name, image) {
+    cartItems.push({ name: name, image: image });
+    displayCartItems();
+}
+
+// Function to remove items from the cart
+function removeFromCart(index) {
+    cartItems.splice(index, 1);
+    displayCartItems();
+}
+
+// Function to clear the cart
+function clearCart() {
+    cartItems = [];
+    displayCartItems();
+}
+
+// Function to display the cart items
+function displayCartItems() {
+    const cartItemsList = document.getElementById('cart-items');
+    cartItemsList.innerHTML = '';
+
+    for (let i = 0; i < cartItems.length; i++) {
+        const item = cartItems[i];
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = item.image;
+        img.alt = item.name;
+        li.appendChild(img).style.width = '100px';
+        const p = document.createElement('p');
+        p.textContent = item.name;
+        li.appendChild(p);
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = function() {
+            removeFromCart(i);
+        };
+        li.appendChild(removeButton);
+        cartItemsList.appendChild(li);
+    }
+}
+
+    </script>
+</body>
+</html>
