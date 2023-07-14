@@ -18,6 +18,7 @@ function show(elementID) {
 function addToCart(name, image) {
     cartItems.push({ name: name, image: image });
     displayCartItems();
+    document.querySelector('.show-con1').style.display = 'flex';
 }
 
 // Function to remove items from the cart

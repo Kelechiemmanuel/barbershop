@@ -552,7 +552,8 @@ display: none;
     display: none;
 }
 .show-con1{
-  display: flex;
+  display: none;
+  transition: 0.5s;
   justify-content: center;
   align-items: center;
   text-align: center;

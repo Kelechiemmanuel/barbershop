@@ -728,17 +728,28 @@ justify-content: center;
   border: none;
   outline: none;
 }
-.news-sender{
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: #fff;
-  max-width: 280px;
-}
 
 .shop-no{
   color: #fff;
   margin-top: 10px;
+}
+
+.formular{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.email-atmo{
+  padding: 10px 10px;
+  max-width: 400px;
+  background: none;
+  border-radius: 5px;
+  border: none;
+  outline: none;
 }
 
 .sender{
