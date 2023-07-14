@@ -6,49 +6,87 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
-    .swiper-container {
-    width: 100%;
-    height: 100vh;
+.cart-container {
+  width: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f2f2f2;
+.cart {
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  transition: transform 0.3s ease;
 }
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn-slide {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-slide:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 
 </style>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <h1>Page 1</h1>
-                <p>Content of Page 1</p>
-            </div>
-            <div class="swiper-slide">
-                <h1>Page 2</h1>
-                <p>Content of Page 2</p>
-            </div>
-            <div class="swiper-slide">
-                <h1>Page 3</h1>
-                <p>Content of Page 3</p>
-            </div>
+    <div class="cart-container">
+        <div id="cart" class="cart">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <div class="cart-actions">
+            <button id="btn-prev" class="btn-slide" disabled>Prev</button>
+            <button id="btn-next" class="btn-slide" disabled>Next</button>
+          </div>
         </div>
-    </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      </div>
+      
     <script>
-        // Initialize Swiper
-var swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal',
-    loop: false,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+ const cart = document.getElementById('cart');
+const btnPrev = document.getElementById('btn-prev');
+const btnNext = document.getElementById('btn-next');
+
+let currentSlide = 0;
+const slideWidth = 300; // Width of each slide
+const numSlides = 3; // Number of slides
+const maxSlides = numSlides - 1;
+
+// Disable/enable buttons based on current slide
+function updateButtons() {
+  btnPrev.disabled = currentSlide === 0;
+  btnNext.disabled = currentSlide === maxSlides;
+}
+
+// Move the cart to the specified slide
+function moveToSlide(slide) {
+  const position = -slide * slideWidth;
+  cart.style.transform = `translateX(${position}px)`;
+  currentSlide = slide;
+  updateButtons();
+}
+
+// Event listeners for prev/next buttons
+btnPrev.addEventListener('click', () => moveToSlide(currentSlide - 1));
+btnNext.addEventListener('click', () => moveToSlide(currentSlide + 1));
+
+// Initial setup
+updateButtons();
 
     </script>
 </body>

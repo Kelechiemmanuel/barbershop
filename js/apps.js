@@ -57,7 +57,7 @@ signInButton.addEventListener("click", (e) =>{
     .then((userCredential) =>{
         var user = userCredential.user;
         console.log("user", user.email);
-        window.location = "booking.html";
+        window.location = "previous.html";
     })
 
     .catch((error) =>{

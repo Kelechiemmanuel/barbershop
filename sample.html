@@ -33,69 +33,69 @@ button {
 <body>
   <h1>Shopping Cart</h1>
 
-  <div id="cart">
+  <div id="carter">
     <h2>Cart</h2>
-    <ul id="cart-items"></ul>
-    <button onclick="clearCart()">Clear Cart</button>
+    <ul id="cart-materials"></ul>
+    <button onclick="deleteCart()">Clear Cart</button>
   </div>
 
-  <div id="products">
+  <div id="goods">
     <h2>Products</h2>
     <ul>
       <li>
-        <span>Product 1</span>
-        <button onclick="addToCart('Product 1')">Add to Cart</button>
+        <span>good 1</span>
+        <button onclick="sumToCart('good 1')">Add to Cart</button>
       </li>
       <li>
-        <span>Product 2</span>
-        <button onclick="addToCart('Product 2')">Add to Cart</button>
+        <span>good 2</span>
+        <button onclick="sumToCart('good 2')">Add to Cart</button>
       </li>
       <li>
-        <span>Product 3</span>
-        <button onclick="addToCart('Product 3')">Add to Cart</button>
+        <span>good 3</span>
+        <button onclick="sumToCart('good 3')">Add to Cart</button>
       </li>
     </ul>
   </div>
 
   <script>
     // Array to store cart items
-var cartItems = [];
+var carterMaterials = [];
 
 // Function to add item to the cart
-function addToCart(item) {
-  cartItems.push(item);
+function sumToCart(item) {
+  cartMaterials.push(material);
   updateCart();
 }
 
 // Function to remove item from the cart
-function removeFromCart(index) {
-  cartItems.splice(index, 1);
+function deleteFromCart(index) {
+  cartMaterials.splice(index, 1);
   updateCart();
 }
 
 // Function to update the cart display
 function updateCart() {
-  var cartItemsElement = document.getElementById("cart-items");
-  cartItemsElement.innerHTML = "";
+  var cartMaterialsElement = document.getElementById("cart-materials");
+  cartMaterialsElement.innerHTML = "";
 
-  for (var i = 0; i < cartItems.length; i++) {
+  for (var i = 0; i < cartMaterials.length; i++) {
     var li = document.createElement("li");
-    li.innerText = cartItems[i];
-    var removeButton = document.createElement("button");
-    removeButton.innerText = "Remove";
-    removeButton.onclick = (function(index) {
+    li.innerText = cartMaterials[i];
+    var deleteButton = document.createElement("button");
+    deleteButton.innerText = "Remove";
+    deleteButton.onclick = (function(index) {
       return function() {
-        removeFromCart(index);
+        deleteFromCart(index);
       }
     })(i);
-    li.appendChild(removeButton);
-    cartItemsElement.appendChild(li);
+    li.appendChild(deleteButton);
+    cartMaterialsElement.appendChild(li);
   }
 }
 
 // Function to clear the cart
-function clearCart() {
-  cartItems = [];
+function deleteCart() {
+  cartMaterials = [];
   updateCart();
 }
 

@@ -8,331 +8,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/previous.css">
     <title>Document</title>
-    <style>
-    body{
-        margin: 0;
-      }
-      .login-pop{
-        width: 100%;
-        height: 98vh;
-        background-color: black;
-      }
-      .login-con{
-        height: 200px;
-        width: 100%;
-        max-width: 600px;
-        background-color: rgb(75, 70, 70);
-      }
-
-      .persons-login{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        max-width: 600px;
-        height: 100px;
-        background-color: #fff;
-      }
-
-      .login-pri-btn{
-        padding: 5px 10px;
-      }
-
-      .hidden-flow{
-        overflow: hidden;
-      }
-      .menu{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        max-width: 600px;
-        height: 50px;
-      }
-
-      .menu-cons{
-        position: relative;
-        width: 100%;
-        max-width: 600px;
-        height: 100%;
-        transition: 0.5s;
-        padding: 100px 0 100px 0;
-        background-color: rgb(75, 70, 70);
-      }
-      .menu-con{
-        width: 100%;
-        left: 0;
-        max-width: 600px;
-        transition: 0.5s;
-        height: 325px;
-        background-color: rgb(75, 70, 70);
-      }
-
-      .Clients-login{
-        width: 400px;
-      }
-
-      .menu-title{
-        margin-left: 38px;
-        display: flex;
-        flex-wrap: wrap;
-        text-decoration: none;
-        align-items: center;
-        color: #fff;
-      }
-      .menu-title2{
-        margin-left: 38px;
-        flex-wrap: wrap;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-      }
-
-      .title-next{
-        margin-right: 40px;
-      }
-
-      .next-btn{
-        width: 30px;
-        height: 30px;
-        margin-right: 50px;
-        border: none;
-        cursor: pointer;
-        background: none;
-        color: #fff;
-        border-radius: 20px;
-        font-size: 20px;
-      }
-
-      .next-btn:hover i{
-       transform: translateX(-5px);
-       transition: 0.8s;
-      }
-
-      .hori2{
-        width: 100%;
-        max-width: 500px;
-        margin-left: -1px;
-      }
-
-      .hori{
-        width: 100%;
-        max-width: 500px;
-      }
-
-      .staff-images{
-        width: 40px;
-        margin-right: 20px;
-      }
-
-
-      .form-con{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .input{
-        padding: 10px;
-        width: 100%;
-        max-width: 700px;
-        box-sizing: border-box;
-        border-radius: 50px;
-        outline: none;
-        border: 1px solid lightgray;
-        margin-bottom: 30px;
-    }
-
-    .form{
-        padding: 10px 20px;
-        width: 100%;
-        max-width: 900px;
-        box-sizing: border-box;
-        border-radius: 5px;
-    }
-
-    .input-group{
-        position: relative;
-    }
-
-    .placeholder{
-        position: absolute;
-        top: 10px;
-        left: 8px;
-        font-size: 14px;
-        padding: 0px 5px;
-        color: #666;
-        transition: 0.3s;
-        pointer-events: none;
-    }
-    .placeholder::after{
-    display: none;
-    }
-
-    .input:focus + .placeholder{
-        top: -10px;
-        color: #04AA6D;
-        background-color: #fff;
-        
-    }
-
-    .date-checking{
-        padding: 10px 70px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-    }
-
-    .submit-booker{
-        padding: 10px 20px;
-        margin-left: 40px;
-        color: #fff;
-        background-color: rgb(49, 49, 49);
-        border: none;
-        border-radius: 4px;
-    }
-
-    .back-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .left-arrow{
-        margin-left: 45px;
-        margin-right: 5px;
-        color: #fff;
-        font-size: 20px;
-    }
-    .left-arrows{
-        margin-left: 45px;
-        margin-right: 5px;
-        color: #fff;
-        font-size: 20px;
-    }
-    .pages{
-        position: fixed;
-        width: 800px;
-        overflow: hidden;
-    }
-
-    .show-con{
-        display: none;
-    }
-    .show-con1{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: fixed;
-        max-width: 360px;
-        width: 100%;
-        height: 100%;
-        background-color: burlywood;
-    }
-
-    .section-con{
-      max-width: 600px;
-      width: 100%;
-      padding-top: 40px;
-      margin: 50px auto;
-    }
-
-    .toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px;
-}
-
-.products {
-    justify-content: center;
-    background-color: rgb(75, 70, 70);
-}
-.product {
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-}
-
-.menu-logo{
-  color: #fff;
-  margin-left: 40px;
-}
-
-.added {
-    color: white;
-    background-color: red;
-}
-
-.hairs{
-  color: #fff;
-}
-
-.next-btn2{
-  padding: 5px 50px;
-}
-.next-btn2{
-  color: #fff;
-  border: 1px solid white;
-  border-radius: 20px;
-  background: none;
-  cursor: pointer;
-  padding: 5px 50px;
-}
-.class{
-  color: #fff;
-  border: 1px solid white;
-  background: none;
-  padding: 5px 20px;
-}
-
-.hair-style{
-  width: 200px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.menu-logo2{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.image-3{
-  width: 50px;
-}
-
-.cart-2{
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fff;
-  border-radius: 100px;
-}
-
-.cols{
-  position: fixed;
-  top: 8%;
-  right: 0;
-  width: 350px;
-  height: 100vh;
-  background-color: #04AA6D;
-}
-
-
-    </style>
 </head>
 <body>
+  <div id="myNav" class="box-con">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="box">
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="book-me.html">Book</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </ul>
+</div>
+
+<div class="nav-bar">
+  <div class="logo-con">
+    <img class="logo-img" src="images/logo-removebg-preview.png" alt="">
+</div>
+    <ul class="nav-items">
+        <a href="home.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="book-me.html">Book</a>
+        <a href="contacts.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+    </ul>
+  <p class="open-up" onclick="openNav()">&#9776;</p>
+</div>
+
+<section class="swipe-container">
+<div id="slide" class="swide-container">
+<div class="slideer">
+  <a href="javascript:void(0)" class="closebtn2" onclick="slideShow()">&times;</a>
+  <div class="swipe-inner">
+    <h3>We are here for you</h3>
+    <a class="super" href="#">
+      <span class="material-icons clicks">phone</span>
+      <span class="click">08148611216</span>
+  </a>
+  <button class="open-button" onclick="openForm()">
+      <a class="inside-link" href="#">
+      
+  <i class='fas fa-comment-dots clicks'></i>
+      <span class="click">Livechat</span>
+      </a>
+  </button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container">
+      <div class="chat">
+          <button type="button" class="btn cancel" onclick="closeForm()">&times;</button> 
+  
+          <div class="chat_body"> 
+      
+            
+            
+            </div>   
+            <div class="chat_input">
+                <input type="text" class="in" placeholder="Start a Conversation...">
+                <button class="send">
+                  <span class="material-icons arrows">send</span>
+                </button>
+            </div>  
+            </div> 
+    </form>
+  </div>
+  </div>
+</div>
+
+<div class="slide-button">
+  <h3 class="open-up2" onclick="openHelp()">
+    <img class="help-img" src="images/help2.png" alt="">
+  </h3>
+</div>
+</div>
+</section>
+
     <div class="show-con">
         <span onclick="show('Page1');">1</span>
         <span onclick="show('Page2');">2</span>
@@ -355,9 +107,9 @@
         <div class="menu">
           <h2 class="menu-title">Menu</h2>
           <div class="title-next">
-            <button class="next-btn">
+            <!-- <button class="next-btn">
               <i class="fa fa-close"></i>
-            </button>
+            </button> -->
           </div>
        </div>
         <div class="menu">
@@ -365,7 +117,8 @@
           <div class="title-next">
           </div>
        </div>
-       <hr class="hori">
+       <!-- <hr class="hori"> -->
+       <hr>
 
        <div id="products">
         <ul id="product-items">
@@ -378,7 +131,8 @@
               </div>
                 <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
             </li>
-            <hr class="hori2">
+            <!-- <hr class="hori2"> -->
+            <hr>
             <li class="menu-logo2">
               <div>
                 <img class="hair-style" src="images/beard.jpg" alt="">
@@ -388,17 +142,19 @@
               </div>
                 <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
             </li>
-            <hr class="hori2">
+            <!-- <hr class="hori2"> -->
+            <hr>
             <li class="menu-logo2">
               <div>
                 <img class="hair-style" src="images/beard2.jpg" alt="">
                 <p class="hairs">Beard Trim (w/ Straight Razor Finish, A Cold Towel)</p>
                 <p class="hairs">80mins: &#160; ₦10,000</p>
-                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦10,000', 'images/beard.jpg')">Add</button>
+                <button class="next-btn2" onclick="addToCart('80mins: &#160; ₦10,000', 'images/beard2.jpg')">Add</button>
               </div>
                 <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
             </li>
-            <hr class="hori2">
+            <!-- <hr class="hori2"> -->
+            <hr>
             <li class="menu-logo2">
               <div>
                 <img class="hair-style" src="images/beard3.jpg" alt="">
@@ -408,7 +164,8 @@
               </div>
                 <button class="next-btn" onclick="show('Page2');"><i class='fas fa-chevron-right'></i></button>
             </li>
-            <hr class="hori2">
+            <!-- <hr class="hori2"> -->
+            <hr>
         </ul>
     </div>
     </div>
@@ -416,89 +173,84 @@
 
 <!-- second page menu page -->
 
-<div id="Page2" class="page" style="display:none; height: 75vh; width: 600px;">
+<div id="Page2" class="page" style="display:none; height: 100%;">
     <div class="menu-cons" id="previous">
         <div class="menu">
           <h2 class="menu-title">Select Staff</h2>
           <div class="title-next">
-            <button class="next-btn">
+            <!-- <button class="next-btn">
               <i class="fa fa-close"></i>
-            </button>
+            </button> -->
           </div>
        </div>
-        <div class="menu">
-            <div class="back-menu">
-                 <i onclick="show('Page1');" class='fas fa-chevron-left left-arrow'></i>
-                <p class="menu-title">Available Staff</p> 
-            </div>
+
+       <div class="menu">
+        <div class="back-menu">
+             <i onclick="show('Page3');" class='fas fa-chevron-left left-arrow'></i>
+            <p class="menu-title">Available Staff</p> 
+        </div>
        </div>
+
        <hr>
-        <div class="menu" onclick="show('Page3');">
-          <a href="#" class="menu-title2">
-            <img class="staff-images" src="images/general.png" alt="">
-        <span>James (masterBarber)
-        </span>
-          </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-       </div>
-       <hr>
-        <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title2">
-                <img class="staff-images" src="images/general.png" alt="">
-            <span>Chukwuka (masterBarber)
-            </span>
-              </a>
-              <div class="title-next">
-                <button class="next-btn">
-                  <i class='fas fa-chevron-right'></i>
-                </button>
+
+       <div id="products">
+        <ul id="product-items">
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-stylee" src="images/james5.jpeg" alt="">
+                <p class="hairs">James (masterBarber)</p>
+                <button class="next-btn2" onclick="addToCart('With James (masterBarber)', 'images/james5.jpeg')">Add</button>
               </div>
-      </div>
-      <hr>
-        <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title2">
-                <img class="staff-images" src="images/general.png" alt="">
-            <span>Enda Ekene (masterBarber)
-            </span>
-              </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-      </div>
-      <hr>
-        <div class="menu" onclick="show('Page3');">
-            <a href="#" class="menu-title2">
-            <img class="staff-images" src="images/general.png" alt="">
-            <span>Enda Ekene (masterBarber)
-            </span>
-              </a>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class='fas fa-chevron-right'></i>
-            </button>
-          </div>
-      </div>
+              <button class="next-btn" onclick="show('Page3');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+
+           <!-- <hr class="hori2"> -->
+           <hr>
+
+           <li class="menu-logo2">
+            <div>
+              <img class="hair-stylee" src="images/james4.jpeg" alt="">
+              <p class="hairs">Fanzy (masterBarber)</p>
+              <button class="next-btn2" onclick="addToCart('Fanzy (masterBarber)', 'images/james4.jpeg')">Add</button>
+            </div>
+            <button class="next-btn" onclick="show('Page3');"><i class='fas fa-chevron-right'></i></button>
+          </li>
+            <!-- <hr class="hori2"> -->
+            <hr>
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-stylee" src="images/james2.jpeg" alt="">
+                <p class="hairs">Enda (masterBarber)</p>
+                <button class="next-btn2" onclick="addToCart('Enda(masterBarber)', 'images/james2.jpeg')">Add</button>
+              </div>
+              <button class="next-btn" onclick="show('Page3');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <!-- <hr class="hori2"> -->
+            <hr>
+            <li class="menu-logo2">
+              <div>
+                <img class="hair-stylee" src="images/ekene.jpg" alt="">
+                <p class="hairs">Sochima (masterBarber)</p>
+                <button class="next-btn2" onclick="addToCart('Sochima (masterBarber)', 'images/ekene.jpg')">Add</button>
+              </div>
+              <button class="next-btn" onclick="show('Page3');"><i class='fas fa-chevron-right'></i></button>
+            </li>
+            <!-- <hr class="hori2"> -->
+            <hr>
+        </ul>
+    </div>
     </div>
 </div>
 
 <!-- third page -->
-<div id="Page3" class="page" style="display:none; height: 75vh;" onclick="pageClick()">
+<div id="Page3" class="page" style="display:none; height: 100%;" onclick="pageClick()">
     <div class="menu-cons" id="previous">
         <div class="menu">
             <i onclick="show('Page2');" class='fas fa-chevron-left left-arrows'></i>
           <h2 class="menu-title">Fill to Form to Book</h2>
-          <div class="title-next">
-            <button class="next-btn">
-              <i class="fa fa-close"></i>
-            </button>
-          </div>
        </div>
+
+       <hr>
        <div class="form-con" id="form-con">
         <form class="form" action="https://formsubmit.co/83d4cec1e914f3dd094b44a331bbc1be " method="POST">
             <input type="text" name="_honey" style="display: none;">
@@ -537,75 +289,89 @@
 <div class="cols"></div>
 
 
+<section class="footer-con">
+  <footer class="footer-items">
+  <div class="footer">
+    <div class="logo-con">
+      <img class="logo-img2" src="images/logo.jpg" alt="">
+  </div>
+  <div class="iconization">
+    <span class="material-icons iconize">location_on</span>
+    <span class="shop-no">Shop No.49, Ezza Rd Presco Campus Ebsu.</span>
+    </div>
+    <div class="iconization">
+      <span class="material-icons iconize">mail</span>
+      <span class="shop-no">ikeoguogonna@gmail.com</span>
+    </div>
+    <div class="iconization">
+      <span class="material-icons iconize">phone</span>
+      <span class="shop-no">(+234)07061202609</span>
+    </div>
+  
+  <div class="social-info">
+    <h3 class="social-title">SOCIAL INFO</h3>
+    <div class="social-media">
+        <a href="https://www.facebook.com">
+        <i class='fab fa-facebook-f social'></i>
+        </a>
+        <a href="https://www.twitter.com">
+        <i class="fa-brands fa-twitter social"></i>
+        </a>
+        <a href="https://www.instagram.com">
+        <i class="fa-brands fa-instagram social"></i>
+        </a>
+    </div>
+  </div>
+  </div>
+  
+  <div class="footer">
+  <h3 class="footer-title">Other Information</h3>
+  <ul class="footer-bar">
+  <li class="bars">
+  <span class="material-icons arrow">keyboard_arrow_right</span>
+  <a class="footer-link" href="#">Home</a>
+  </li>
+  <li class="bars">
+  <span class="material-icons arrow">keyboard_arrow_right</span>
+  <a class="footer-link" href="#">About US </a>
+  </li>
+  <li class="bars">
+  <span class="material-icons arrow">keyboard_arrow_right</span>
+  <a class="footer-link" href="#">Services</a>
+  </li>
+  <li class="bars">
+  <span class="material-icons arrow">keyboard_arrow_right</span>
+  <a class="footer-link" href="#">Features</a>
+  </li>
+  </ul>
+  </div>
+  
+  <div class="footer">
+  <h3 class="footer-title">Newsletter</h3>
+  <p class="news-letter">
+    ST JAMES is the grooming experience every man deserves - where
+    traditional barbering services meets all your need. Sit back, relax and  get groomed.
+  </p>
+  <form class="news-sender" action="#">
+  <input class="placeholder" type="text" placeholder="Enter Your E-mail">
+  <button class="sender">
+    <span class="material-icons arrows">send</span>
+  </button>
+  </form>
+  </div>
+  </footer>
+  </section>
+  <button class="up-arrow-btn">
+  <a href="#">  <span class="material-icons up-arrow">expand_less</span></a>
+  </button>
 
 
 
 
 
 
-<script>
-    function show(elementID) {
-    var ele = document.getElementById(elementID);
-    if (!ele) {
-        alert("No Such Page Found.");
-        return;
-    }
-    var pages = document.getElementsByClassName('page');
-    for(var i = 0; i < pages.length; i++) {
-        pages[i].style.display = 'none';   
-    }
-    ele.style.display = 'block';
-}
 
-        // Array to store the cart items
-        let cartItems = [];
 
-// Function to add items to the cart
-function addToCart(name, image) {
-    cartItems.push({ name: name, image: image });
-    displayCartItems();
-}
-
-// Function to remove items from the cart
-function removeFromCart(index) {
-    cartItems.splice(index, 1);
-    displayCartItems();
-}
-
-// Function to clear the cart
-function clearCart() {
-    cartItems = [];
-    displayCartItems();
-}
-
-// Function to display the cart items
-function displayCartItems() {
-    const cartItemsList = document.getElementById('cart-items');
-    cartItemsList.innerHTML = '';
-
-    for (let i = 0; i < cartItems.length; i++) {
-        const item = cartItems[i];
-        const li = document.createElement('li');
-        const img = document.createElement('img');
-        img.src = item.image;
-        img.alt = item.name;
-        li.appendChild(img).style.width = '100px';
-        const p = document.createElement('p');
-        p.textContent = item.name;
-        li.appendChild(p);
-        const removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove';
-        removeButton.onclick = function() {
-            removeFromCart(i);
-        };
-        li.appendChild(removeButton).style.background = 'none';
-        li.appendChild(removeButton).style.border = '1px solid white';
-        li.appendChild(removeButton).style.color = 'white';
-        li.appendChild(removeButton).style.marginBottom = '10px';
-        cartItemsList.appendChild(li).style.listStyle = 'none';
-    }
-}
-
-</script>
+<script src="js/previous.js"></script>
 </body>
 </html>
