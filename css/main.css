@@ -577,6 +577,7 @@ justify-content: center;
 
  .profile-sec{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
   padding: 20px;
@@ -594,7 +595,7 @@ justify-content: center;
   width: 300px;
   height: 86vh;
   object-fit: cover;
-  margin-left: -50px;
+  margin-left: -150px;
   object-position: calc(100% - 70%);
  }
 
@@ -604,6 +605,36 @@ justify-content: center;
   justify-content: center;
   background-image: url(../images/back.jpg);
   height: 100%;
+ }
+
+ .disconnect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  background-color: rgb(49, 49, 49);
+ }
+
+ .disconnect-minor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  border-radius: 200px;
+  border: 1px dashed rgba(199, 176, 130, 1);
+ }
+
+ .writing{
+  color: #fff;
+  font-size: 20px;
+ }
+ .writing2{
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
  }
 
  .linkin-line{
@@ -689,6 +720,73 @@ justify-content: center;
   align-items: center;
   border: 1px dashed rgba(199, 176, 130, 1);
   background-color:  rgb(49, 49, 49);
+}
+
+.working-hour-section{
+  margin-top: 50px;
+}
+
+.working-hour{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.working{
+  width: 500px;
+  margin-top: 30px;
+  height: 100%;
+  padding: 20px 50px;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+p{
+  transform: translateY(100px);
+  animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .footer-con{
