@@ -91,6 +91,7 @@ body{
 .logo-con{
   display: flex;
   justify-content: center;
+  background-color: #fff;
   align-items: center;
   width: 90px;
   height: 90px;
