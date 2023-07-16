@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/success.css">
     <title>Document</title>
     <style>
-        .check-box{
-            width: 50px;
-            height: 50px;
-            border-radius: 40px;
-            font-size: 30px;
-            text-align: center;
-            background-color: green;
-            padding: 0 0 5px 0;
-            color: white;
-            border: none;
-        }
-
-        .success-con{
-            text-align: center;
-        }
     </style>
 </head>
 <body>
+    <div id="myNav" class="box-con">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="box">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="book-me.html">Book</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </ul>
+    </div>
+
+    <div class="nav-bar">
+      <div class="logo-con">
+        <img class="logo-img" src="images/logo-removebg-preview.png" alt="">
+    </div>
+        <ul class="nav-items">
+            <a href="home.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="book-me.html">Book</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="about.html">About Us</a>
+        </ul>
+      <p class="open-up" onclick="openNav()">&#9776;</p>
+    </div>
+
     <div class="success-con">
         <button class="check-box">&check;</button>
         <p><b>success!</b><br>
@@ -30,6 +46,82 @@
         <b>Thank you</b>
         </p>
     </div>
+
+    <section class="footer-con">
+        <footer class="footer-items">
+        <div class="footer">
+          <div class="logo-con">
+            <img class="logo-img2" src="images/logo.jpg" alt="">
+        </div>
+        <div class="iconization">
+          <span class="material-icons iconize">location_on</span>
+          <span class="shop-no">Shop No.49, Ezza Rd Presco Campus Ebsu.</span>
+          </div>
+          <div class="iconization">
+            <span class="material-icons iconize">mail</span>
+            <span class="shop-no">ikeoguogonna@gmail.com</span>
+          </div>
+          <div class="iconization">
+            <span class="material-icons iconize">phone</span>
+            <span class="shop-no">(+234)07061202609</span>
+          </div>
+        
+        <div class="social-info">
+          <h3 class="social-title">SOCIAL INFO</h3>
+          <div class="social-media">
+              <a href="https://www.facebook.com">
+              <i class='fab fa-facebook-f social'></i>
+              </a>
+              <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter social"></i>
+              </a>
+              <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram social"></i>
+              </a>
+          </div>
+        </div>
+        </div>
+        
+        <div class="footer">
+        <h3 class="footer-title">Other Information</h3>
+        <ul class="footer-bar">
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Home</a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">About US </a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Services</a>
+        </li>
+        <li class="bars">
+        <span class="material-icons arrow">keyboard_arrow_right</span>
+        <a class="footer-link" href="#">Features</a>
+        </li>
+        </ul>
+        </div>
+        
+        <div class="footer">
+        <h3 class="footer-title">Newsletter</h3>
+        <p class="news-letter">
+          ST JAMES is the grooming experience every man deserves - where
+          traditional barbering services meets all your need. Sit back, relax and  get groomed.
+        </p>
+          <form class="formular" action="#">
+            <input class="email-atmo" type="text" placeholder="Enter Your E-mail">
+            <button class="sender">
+              <span class="material-icons arrows">send</span>
+            </button>
+          </form>
+        </div>
+        </footer>
+        </section>
+        <button class="up-arrow-btn">
+        <a href="#">  <span class="material-icons up-arrow">expand_less</span></a>
+        </button>
   
 </body>
 </html>
