@@ -184,6 +184,26 @@ body{
   width: 280px;
 }
 
+.whatsapp-con{
+  background: none;
+  margin-bottom: 20px;
+  border: none;
+  color: rgba(199, 176, 130, 1);
+
+}
+
+.whatsapp-link{
+  color: rgba(199, 176, 130, 1);
+  font-size: 18px;
+}
+.margin{
+  color: rgba(199, 176, 130, 1);
+  font-size: 20px;
+}
+
+.whatsapp-container{
+  margin-top: 50px;
+}
 .inside-link{
   display: flex;
   justify-content: center;

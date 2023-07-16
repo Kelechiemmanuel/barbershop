@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,19 +44,26 @@
 <div class="slideer">
   <a href="javascript:void(0)" class="closebtn2" onclick="slideShow()">&times;</a>
   <div class="swipe-inner">
-    <h3>We are here for you</h3>
-    <a class="super" href="#">
-      <span class="material-icons clicks">phone</span>
-      <span class="click">08148611216</span>
-  </a>
-  <button class="open-button" onclick="openForm()">
-      <a class="inside-link" href="#">
-      
-  <i class='fas fa-comment-dots clicks'></i>
-      <span class="click">Livechat</span>
-      </a>
-  </button>
-
+    <div class="whatsapp-container">
+      <div>
+        <button class="whatsapp-con">
+          <i class="fa fa-whatsapp margin"></i>
+          <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=+2347061202609&text=Hello this is the starting message">Whatsapp</a>
+        </button>
+      </div>
+      <div>
+        <button class="whatsapp-con">
+          <i class="fa fa-phone margin"></i>
+          <a class="whatsapp-link" href="tel:07061202609">07061202609</a>
+        </button>
+      </div>
+      <div>
+        <button class="whatsapp-con" onclick="openForm()">
+          <i class='fas fa-comment-dots clicks'></i>
+          <span class="click">Livechat</span>
+        </button>
+      </div>
+    </div>
   <div class="chat-popup" id="myForm">
     <form action="#" class="form-container">
       <div class="chat">
