@@ -57,7 +57,7 @@ body{
 .open-up{
   cursor: pointer;
   color: rgb(163, 156, 156);
-  font-size: 25px;
+  font-size: 30px;
 }
 .nav-bar{
   display: flex;
@@ -619,7 +619,7 @@ font-size:1.1rem;
 }
 @media screen and (max-width: 1100px) {
   .open-up{
-    margin-right: 60px;
+    margin-right: -20px;
   }
   .small{
     display: none;

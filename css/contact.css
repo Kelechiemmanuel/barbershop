@@ -55,7 +55,7 @@
     .open-up{
     cursor: pointer;
     color: rgb(163, 156, 156);
-    font-size: 25px;
+    font-size: 30px;
     }
     .nav-bar{
     display: flex;
@@ -612,7 +612,7 @@ font-weight: bolder;
 }
 
 .open-up{
-    margin-right: 60px;
+    margin-right: -20px;
 }
 .small{
     display: none;
