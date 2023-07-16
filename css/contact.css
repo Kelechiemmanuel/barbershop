@@ -223,16 +223,18 @@
     }
 
     .chat-popup {
-    display: none;
-    width: 30%;
-    height: 92%;
-    position: fixed;
-    transition: 0.5s;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.897);
-    z-index: 9;
-    }
+        display: none;
+        width: 30%;
+        height: 92%;
+        position: fixed;
+        transition: 0.5s;
+        bottom: 0;
+        right: 0;
+        top: 13%;
+        bottom: 20%;
+        background-color: whitesmoke;
+        z-index: 9;
+      }
 
     .form-container .cancel {
     font-size: 30px;
