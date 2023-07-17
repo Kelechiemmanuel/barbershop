@@ -919,6 +919,10 @@ button{
       display: grid;
   
     }
+
+    .chat-popup{
+      width: 90%;
+    }
     .open-up{
       display: block;
     }

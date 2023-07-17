@@ -830,6 +830,10 @@ justify-content: center;
     .auto{
       margin-top: -70px;
     }
+
+    .chat-popup{
+      width: 90%;
+    }
   
     .open-up{
       margin-right: -20px;

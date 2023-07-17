@@ -859,6 +859,10 @@ font-size:1.1rem;
     .nav-items{
       display: none;
     }
+
+    .chat-popup{
+      width: 90%;
+    }
     
     .footer-con{
       width: 100%;

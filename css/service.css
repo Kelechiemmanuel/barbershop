@@ -648,6 +648,9 @@ font-size:1.1rem;
   .small{
     display: none;
   }
+  .chat-popup{
+    width: 90%;
+  }
   .nav-items{
     display: none;
   }

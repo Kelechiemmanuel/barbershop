@@ -615,6 +615,10 @@ font-weight: bolder;
     width: 100%;
 }
 
+.chat-popup{
+    width: 90%;
+  }
+
 .home{
     background: none;
     display: grid;

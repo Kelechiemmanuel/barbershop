@@ -1487,6 +1487,10 @@ display: none;
   .open-up{
     margin-right: -20px;
   }
+
+  .chat-popup{
+    width: 90%;
+  }
   .small{
     display: none;
   }
