@@ -1439,7 +1439,13 @@ display: none;
   }
 
   .img-src{
-    width: 400px;
+    /* width: 400px; */
+    display: none;
+  }
+
+  .profile-all{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .slide img{
