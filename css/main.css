@@ -674,7 +674,8 @@ justify-content: center;
  .carousel-menu{
   width: 450px;
   color: black;
-  padding-left: 30px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 .carousel-image{
